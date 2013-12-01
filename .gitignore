@@ -1,0 +1,15 @@
+*.pyc
+*.o
+*.so
+*.gcno
+*.swp
+*.egg-info
+*.egg
+*~
+build
+dist
+lib/test
+doc/_build
+*.log
+*env
+*ENV
