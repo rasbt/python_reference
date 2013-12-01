@@ -8,14 +8,19 @@ import re
      '+' matches all characters that follow (1 or more)
      '?' makes the previous character optional
      '{4}' previous character must match exactly 4 times
-<<<<<<< HEAD
      '{2-4}' previous character must match exactly 2-4 times
      '[0-9]' matches all characters in the set of numbers 0 to 9
      '[A-Z]' matches all characters in the set of A to Z
+     '\d' matches all digits, e.g., '4', '9' ...
+     '\D' matches all NON-digit characters
+     '\s' matches all space characters: '', '\t', '\r', '\n'
+     '\S' matches all NON-space characters
+     '\w' matches all non-punctuation characters (i.e., letters and digits)
+     '\W' matches all NON-letter and NON-digit characters
+     '^bla' NOT-matches 'bla'
+     'let$' matches 'let' but not 'letter'
+     '\b' matches transition between non-word characters and word characters
  
-=======
-     '{2-4}' previous character must match exactly 2-4 times  
->>>>>>> 27283e2422d4773456419bf7cb8ee6845a54aff6
 '''
 
 data = '''2013-01-01
