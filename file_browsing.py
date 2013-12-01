@@ -56,6 +56,8 @@ os.path.isabs('./some_file.txt') # returns False (not an absolute path)
 os.path.abspath('./some_file.txt')
 
 
+
+
 # create and delete files and directories
 os.mkdir('./test')  # create a new direcotory
 os.rmdir('./test')  # removes an empty direcotory
@@ -65,4 +67,7 @@ shutil.rmtree('./test') # removes directory (empty or not empty)
 
 os.rename('./dir_before', './renamed') # renames directory if destination doesn't exist
 shutil.move('./dir_before', './renamed') # renames directory always
+
+shutil.copytree('./orig', './copy') # copies a directory recursively
+shutil.copyfile('file', 'copy')     # copies a file
 
