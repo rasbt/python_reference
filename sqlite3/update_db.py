@@ -20,7 +20,7 @@ c.execute("""INSERT OR REPLACE INTO zinc_db1 (zinc_id, rotatable_bonds, purchasa
               VALUES ( 'ZINC123456798', 
                 3, 
                 COALESCE((SELECT purchasable from zinc_db1 WHERE zinc_id = 'ZINC123456798'), 0)
-              )"""
+              )""")
 
 
 
