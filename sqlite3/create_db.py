@@ -9,7 +9,7 @@ c = conn.cursor()
 
 # create table
 c.execute('''CREATE TABLE zinc_db1
-             (zinc_id TEXT, purchasable TEXT, non_rot_bonds INT)''')
+             (zinc_id PRIMARY KEY, purchasable TEXT, non_rot_bonds INT)''')
 
 # Insert one row of data
 c.execute("INSERT INTO zinc_db1 VALUES ('ZINC00895032','YES', 4)")
