@@ -4,11 +4,18 @@
 
 import os
 import shutil
+import glob
 
 # working directory
 c_dir = os.getcwd()                 # show current working directory
 os.listdir(c_dir)                   # shows all files in the working directory
 os.chdir('~/Data')                  # change working directory
+
+
+# get all files in a directory
+>>> glob.glob('/Users/sebastian/Desktop/*')
+
+# e.g.,  ['/Users/sebastian/Desktop/untitled folder', '/Users/sebastian/Desktop/Untitled.txt']
 
 
 
