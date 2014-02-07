@@ -13,7 +13,7 @@ os.chdir('~/Data')                  # change working directory
 
 
 # get all files in a directory
->>> glob.glob('/Users/sebastian/Desktop/*')
+glob.glob('/Users/sebastian/Desktop/*')
 
 # e.g.,  ['/Users/sebastian/Desktop/untitled folder', '/Users/sebastian/Desktop/Untitled.txt']
 
