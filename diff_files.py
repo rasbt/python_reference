@@ -8,11 +8,11 @@ id_set2 = set()
 
 with open('id_file1.txt', 'r') as id_file:
     for line in id_file:
-        id_set1.add(line)
+        id_set1.add(line.strip())
 
 with open('id_file2.txt', 'r') as id_file:
     for line in id_file:
-        id_set2.add(line)    
+        id_set2.add(line.strip())    
 
 diffs = id_set2.difference(id_set1)
 
