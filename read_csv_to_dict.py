@@ -9,6 +9,9 @@ def read_csv(csv_path):
         data = {i:[] for i in header}
         for line in in_csv:
             line = line.strip().split(',')
-            for i in range(len(line)-1):
-                data[header[i]].append(line[i])
+            for i in range(len(line)):
+                try: 
+                    data[header[i]].append(float(line[i]))
+                except ValueError:
+                    data[header[i]].append(line[i])
     return data
