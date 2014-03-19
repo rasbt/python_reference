@@ -10,5 +10,5 @@ def read_csv(csv_path):
         for line in in_csv:
             line = line.strip().split(',')
             for i in range(len(line)-1):
-                data[header[i]].append(line[1])
+                data[header[i]].append(line[i])
     return data
