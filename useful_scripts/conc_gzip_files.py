@@ -14,9 +14,9 @@ def conc_gzip_files(in_dir, out_file, append=False):
              else creates a new output file.
 
     """
-    write_mode = 'bw'
+    write_mode = 'wb'
     if append:
-        write_mode = 'ba'
+        write_mode = 'ab'
     gzips = [os.path.join(in_dir, i) for i in os.listdir(in_dir) if i.endswith('.gz')]
     with open(out_file, write_mode) as ofile:
         for f in gzips:
