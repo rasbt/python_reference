@@ -2,9 +2,9 @@
 
 def palindrome(my_str):
     """
-    Returns True if an input string is a palindrom
+    Returns True if an input string is a palindrome. Else returns False.
     """
-    stripped_str = "".join([l.lower() for l in my_str if l.isalpha()])
+    stripped_str = "".join(l.lower() for l in my_str if l.isalpha())
     return stripped_str == stripped_str[::-1]
 
 if __name__ == '__main__':
