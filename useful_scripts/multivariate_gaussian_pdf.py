@@ -21,13 +21,20 @@ def pdf_multivariate_gauss(x, mu, cov):
     return float(part1 * np.exp(part2))
 
 def test_gauss_pdf():
+    from matplotlib.mlab import bivariate_normal
+
     x = np.array([[0],[0]])
     mu  = np.array([[0],[0]])
     cov = np.eye(2) 
 
-    print(pdf_multivariate_gauss(x, mu, cov))
+    mlab_gauss = bivariate_normal(x,x)
+    mlab_gauss = float(mlab_gauss[0]) # because mlab returns an np.array
+    impl_gauss = pdf_multivariate_gauss(x, mu, cov)
 
-	# prints 0.15915494309189535
+    print('mlab_gauss:', mlab_gauss)
+    print('impl_gauss:', impl_gauss)
+    assert(mlab_gauss == impl_gauss), 'Implementations of the mult. Gaussian return different pdfs'
+
 
 if __name__ == '__main__':
     test_gauss_pdf()
