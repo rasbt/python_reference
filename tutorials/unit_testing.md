@@ -8,7 +8,7 @@
 Advantages of unit testing  
 Main components a typical unit test  
 The different unit test frameworks in Python  
-[Installing py.test](\(#installing)  
+Installing py.test)  
 A py.test example walkthrough  
      Writing some code we want to test  
      Creating a "test" file  

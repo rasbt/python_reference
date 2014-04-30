@@ -12,6 +12,6 @@ Syntax examples for useful Python functions, methods, and modules
 - [Python's scope resolution for variable names and the LEGB rule](http://nbviewer.ipython.org/github/rasbt/python_reference/blob/master/tutorials/scope_resolution_legb_rule.ipynb?create=1)
 
 ### Links to Markdown files
-- [A thorough guide to SQLite database operations in Python](./sqlite3_howto/Readme.md)
+- [A thorough guide to SQLite database operations in Python](./sqlite3_howto/README.md)
 - [Unit testing in Python - Why we want to make it a habit](./tutorials/unit_testing.md)
 - [Installing Scientific Packages for Python3 on MacOS 10.9 Mavericks](./tutorials/installing_scientific_packages.md)
