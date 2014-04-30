@@ -1,7 +1,7 @@
-python_reference
+Python Tutorials and References
 ================
 
-Syntax examples for useful Python functions, methods, and modules
+Useful functions, tutorials, and other Python-related things
 
 
 ###Links to view the IPython Notebooks
