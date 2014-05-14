@@ -19,7 +19,7 @@ Useful functions, tutorials, and other Python-related things
 - A thorough guide to SQLite database operations in Python [[Markdown]](./sqlite3_howto/README.md)
 - Unit testing in Python - Why we want to make it a habit [[Markdown]](./tutorials/unit_testing.md)
 - Installing Scientific Packages for Python3 on MacOS 10.9 Mavericks [[Markdown]](./tutorials/installing_scientific_packages.md)
-- Sorting CSV files using the Python csv module [[IPython nb](./tutorials/http://nbviewer.ipython.org/github/rasbt/python_reference/blob/master/tutorials/sorting_csvs.ipynb?create=1)]
+- Sorting CSV files using the Python csv module [[IPython nb](http://nbviewer.ipython.org/github/rasbt/python_reference/blob/master/tutorials/sorting_csvs.ipynb)]
 
 
 
