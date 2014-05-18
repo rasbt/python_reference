@@ -34,6 +34,7 @@ Useful functions, tutorials, and other Python-related things
 
 **// other**
 
+- Creating a table of contents with internal links in IPython Notebooks and Markdown documents [[IPython nb](http://nbviewer.ipython.org/github/rasbt/python_reference/blob/master/tutorials/table_of_contents_ipython.ipynb)]   
 - Happy Mother's Day [[IPython nb]](http://nbviewer.ipython.org/github/rasbt/python_reference/blob/master/funstuff/happy_mothers_day.ipynb?create=1)
 
 
