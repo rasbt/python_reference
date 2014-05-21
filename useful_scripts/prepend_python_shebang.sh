@@ -9,7 +9,7 @@
 
 # prepends !#/usr/bin/python to all .py files
 find ./ -maxdepth 1 -name "*.py" -exec sed -i.bak '1i\
-#!/usr/bin/env/python
+#!/usr/bin/env python
 ' {} \;
 
 # removes temporary files
