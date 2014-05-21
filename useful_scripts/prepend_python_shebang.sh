@@ -1,6 +1,6 @@
 # Sebastian Raschka 05/21/2014
 # Shell script that prepends a Python shebang 
-# `!#/usr/bin/python` to all
+# e.g., `!#/usr/bin/python` to all
 # Python script files in the current directory
 # so that script files can be executed via
 # >> myscript.py 
