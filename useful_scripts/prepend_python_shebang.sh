@@ -7,8 +7,13 @@
 # instead of 
 # >> python myscript.py
 
+# prepends !#/usr/bin/python to all .py files
 find ./ -maxdepth 1 -name "*.py" -exec sed -i.bak '1i\
 !#/usr/bin/python
 ' {} \;
 
+# removes temporary files
 find . -name "*.bak" -exec rm -rf {} \;
+
+# makes Python scripts executable
+chmod ug+x *.py
