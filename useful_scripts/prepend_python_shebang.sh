@@ -7,7 +7,7 @@
 # instead of 
 # >> python myscript.py
 
-# prepends !#/usr/bin/python to all .py files
+# prepends e.g., !#/usr/bin/python to all .py files
 
 find ./ -maxdepth 1 -name "*.py" -exec sed -i.bak '1i\
 #!'"$(which python)"'
