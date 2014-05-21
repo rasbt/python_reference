@@ -9,9 +9,8 @@
 
 # prepends !#/usr/bin/python to all .py files
 
-python_ver=$(which python)
 find ./ -maxdepth 1 -name "*.py" -exec sed -i.bak '1i\
-#!/usr/bin/env/python"$python_ver"
+#!'"$(which python)"'
 ' {} \;
 
 # removes temporary files
