@@ -38,6 +38,8 @@ Useful functions, tutorials, and other Python-related things
 - Happy Mother's Day [[IPython nb]](http://nbviewer.ipython.org/github/rasbt/python_reference/blob/master/funstuff/happy_mothers_day.ipynb?create=1)
 
 
-**// useful snippets**
+**// useful scripts snippets**
+
+- [Shell script](./useful_scripts/prepend_python_shebang.sh) for prepending Python-shebangs to all .py files in a current directory.
 
 - convert 'tab-delimited' to 'comma-separated' CSV files [[IPython nb]](http://nbviewer.ipython.org/github/rasbt/python_reference/blob/master/useful_scripts/fix_tab_csv.ipynb?create=1)
