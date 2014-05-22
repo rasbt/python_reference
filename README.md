@@ -1,5 +1,4 @@
-Python Tutorials and References
-================
+
 
 ![logo](./Images/logo.png)
 
@@ -7,7 +6,7 @@ Python Tutorials and References
 A collection of useful scripts, tutorials, and other Python-related things
 
 <br>
-<br>
+
 
 ###Links to view the IPython Notebooks and Markdown files
 
