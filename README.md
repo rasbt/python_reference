@@ -1,8 +1,13 @@
 Python Tutorials and References
 ================
 
-Useful functions, tutorials, and other Python-related things
+![logo](./Images/logo.png)
 
+
+A collection of useful scripts, tutorials, and other Python-related things
+
+<br>
+<br>
 
 ###Links to view the IPython Notebooks and Markdown files
 
