@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 # Sebastian Raschka 05/21/2014
 # Shell script that prepends a Python shebang 
 # '#!/usr/bin/env python' to all
