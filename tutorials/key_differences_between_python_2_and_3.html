@@ -1,0 +1,632 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<style>
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "Helvetica Neue", Helvetica, "Hiragino Sans GB", Arial, sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    color: #737373;
+    background-color: white;
+    margin: 10px 13px 10px 13px;
+}
+table {
+	margin: 10px 0 15px 0;
+	border-collapse: collapse;
+}
+td,th {	
+	border: 1px solid #ddd;
+	padding: 3px 10px;
+}
+th {
+	padding: 5px 10px;	
+}
+
+a {
+    color: #0069d6;
+}
+a:hover {
+    color: #0050a3;
+    text-decoration: none;
+}
+a img {
+    border: none;
+}
+p {
+    margin-bottom: 9px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #404040;
+    line-height: 36px;
+}
+h1 {
+    margin-bottom: 18px;
+    font-size: 30px;
+}
+h2 {
+    font-size: 24px;
+}
+h3 {
+    font-size: 18px;
+}
+h4 {
+    font-size: 16px;
+}
+h5 {
+    font-size: 14px;
+}
+h6 {
+    font-size: 13px;
+}
+hr {
+    margin: 0 0 19px;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+}
+blockquote {
+    padding: 13px 13px 21px 15px;
+    margin-bottom: 18px;
+    font-family:georgia,serif;
+    font-style: italic;
+}
+blockquote:before {
+    content:"\201C";
+    font-size:40px;
+    margin-left:-10px;
+    font-family:georgia,serif;
+    color:#eee;
+}
+blockquote p {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 18px;
+    margin-bottom: 0;
+    font-style: italic;
+}
+code, pre {
+    font-family: Monaco, Andale Mono, Courier New, monospace;
+}
+code {
+    background-color: #fee9cc;
+    color: rgba(0, 0, 0, 0.75);
+    padding: 1px 3px;
+    font-size: 12px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+pre {
+    display: block;
+    padding: 14px;
+    margin: 0 0 18px;
+    line-height: 16px;
+    font-size: 11px;
+    border: 1px solid #d9d9d9;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+pre code {
+    background-color: #fff;
+    color:#737373;
+    font-size: 11px;
+    padding: 0;
+}
+sup {
+    font-size: 0.83em;
+    vertical-align: super;
+    line-height: 0;
+}
+* {
+	-webkit-print-color-adjust: exact;
+}
+@media screen and (min-width: 914px) {
+    body {
+        width: 854px;
+        margin:10px auto;
+    }
+}
+@media print {
+	body,code,pre code,h1,h2,h3,h4,h5,h6 {
+		color: black;
+	}
+	table, pre {
+		page-break-inside: avoid;
+	}
+}
+</style>
+<title>Key differences between Python 2 and 3</title>
+
+</head>
+<body>
+<p><a href="http://sebastianraschka.com">Sebastian Raschka</a><br/>
+last updated: 05/24/2014</p>
+
+<p><br></p>
+
+<p><strong>This is a subsection of <a href="http://nbviewer.ipython.org/github/rasbt/python_reference/blob/master/not_so_obvious_python_stuff.ipynb?create=1">"A collection of not-so-obvious Python stuff you should know!"</a></strong></p>
+
+<p><a id='sections'></a></p>
+
+<p><br></p>
+
+<h2>Key differences between Python 2 and 3</h2>
+
+<p><br></p>
+
+<p>There are some good articles already that are summarizing the differences between Python 2 and 3, e.g.,<br/>
+- <a href="https://wiki.python.org/moin/Python2orPython3">https://wiki.python.org/moin/Python2orPython3</a>
+- <a href="https://docs.python.org/3.0/whatsnew/3.0.html">https://docs.python.org/3.0/whatsnew/3.0.html</a>
+- <a href="http://python3porting.com/differences.html">http://python3porting.com/differences.html</a>
+- <a href="https://docs.python.org/3/howto/pyporting.html">https://docs.python.org/3/howto/pyporting.html</a><br/>
+etc.</p>
+
+<p>But it might be still worthwhile, especially for Python newcomers, to take a look at some of those!
+(Note: the the code was executed in Python 3.4.0 and Python 2.7.5 and copied from interactive shell sessions.)</p>
+
+<p><a id='py23_overview'></a></p>
+
+<p><br></p>
+
+<h3>Overview - Key differences between Python 2 and 3</h3>
+
+<ul>
+<li><a href="#unicode">Unicode</a></li>
+<li><a href="#print">The print statement</a></li>
+<li><a href="#integer_div">Integer division</a></li>
+<li><a href="#xrange">xrange()</a></li>
+<li><a href="#raising_exceptions">Raising exceptions</a></li>
+<li><a href="#handling_exceptions">Handling exceptions</a></li>
+<li><a href="#next_next">next() function and .next() method</a></li>
+<li><a href="#loop_leak">Loop variables and leaking into the global scope</a></li>
+<li><a href="#compare_unorder">Comparing unorderable types</a></li>
+</ul>
+
+
+<p><br>
+<br></p>
+
+<p><a id='unicode'></a>
+<br>
+<br></p>
+
+<h3>Unicode...</h3>
+
+<p>[<a href="#py23_overview">back to Python 2.x vs 3.x overview</a>]</p>
+
+<h4>- Python 2:</h4>
+
+<p>We have ASCII <code>str()</code> types, separate <code>unicode()</code>, but no <code>byte</code> type</p>
+
+<h4>- Python 3:</h4>
+
+<p>Now, we finally have Unicode (utf-8) <code>str</code>ings, and 2 byte classes: <code>byte</code> and <code>bytearray</code>s</p>
+
+<p><br></p>
+
+<!-- HTML generated using hilite.me -->
+
+
+<div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #888888">#############</span>
+<span style="color: #888888"># Python 2</span>
+<span style="color: #888888">#############</span>
+
+<span style="color: #333333">&gt;&gt;&gt;</span> <span style="color: #007020">type</span>(unicode(<span style="background-color: #fff0f0">&#39;is like a python3 str()&#39;</span>))
+<span style="color: #333333">&lt;</span><span style="color: #007020">type</span> <span style="background-color: #fff0f0">&#39;unicode&#39;</span><span style="color: #333333">&gt;</span>
+
+<span style="color: #333333">&gt;&gt;&gt;</span> <span style="color: #007020">type</span>(b<span style="background-color: #fff0f0">&#39;byte type does not exist&#39;</span>)
+<span style="color: #333333">&lt;</span><span style="color: #007020">type</span> <span style="background-color: #fff0f0">&#39;str&#39;</span><span style="color: #333333">&gt;</span>
+
+<span style="color: #333333">&gt;&gt;&gt;</span> <span style="background-color: #fff0f0">&#39;they are really&#39;</span> <span style="color: #333333">+</span> b<span style="background-color: #fff0f0">&#39; the same&#39;</span>
+<span style="background-color: #fff0f0">&#39;they are really the same&#39;</span>
+
+<span style="color: #333333">&gt;&gt;&gt;</span> <span style="color: #007020">type</span>(<span style="color: #007020">bytearray</span>(b<span style="background-color: #fff0f0">&#39;bytearray oddly does exist though&#39;</span>))
+<span style="color: #333333">&lt;</span><span style="color: #007020">type</span> <span style="background-color: #fff0f0">&#39;bytearray&#39;</span><span style="color: #333333">&gt;</span>
+
+<span style="color: #888888">#############</span>
+<span style="color: #888888"># Python 3</span>
+<span style="color: #888888">#############</span>
+
+<span style="color: #333333">&gt;&gt;&gt;</span> <span style="color: #007020">print</span>(<span style="background-color: #fff0f0">&#39;strings are now utf-8 </span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\u03BC</span><span style="background-color: #fff0f0">nico</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\u0394</span><span style="background-color: #fff0f0">é!&#39;</span>)
+strings are now utf<span style="color: #333333">-</span><span style="color: #0000DD; font-weight: bold">8</span> μnicoΔé<span style="color: #FF0000; background-color: #FFAAAA">!</span>
+
+
+<span style="color: #333333">&gt;&gt;&gt;</span> <span style="color: #007020">type</span>(b<span style="background-color: #fff0f0">&#39; and we have byte types for storing data&#39;</span>)
+<span style="color: #333333">&lt;</span><span style="color: #008800; font-weight: bold">class</span> <span style="color: #FF0000; background-color: #FFAAAA">&#39;</span><span style="color: #BB0066; font-weight: bold">bytes</span><span style="background-color: #fff0f0">&#39;&gt;</span>
+
+<span style="color: #333333">&gt;&gt;&gt;</span> <span style="color: #007020">type</span>(<span style="color: #007020">bytearray</span>(b<span style="background-color: #fff0f0">&#39;but also bytearrays for those who prefer them over strings&#39;</span>))
+<span style="color: #333333">&lt;</span><span style="color: #008800; font-weight: bold">class</span> <span style="color: #FF0000; background-color: #FFAAAA">&#39;</span><span style="color: #BB0066; font-weight: bold">bytearray</span><span style="background-color: #fff0f0">&#39;&gt;</span>
+
+<span style="color: #333333">&gt;&gt;&gt;</span> <span style="background-color: #fff0f0">&#39;string&#39;</span> <span style="color: #333333">+</span> b<span style="background-color: #fff0f0">&#39;bytes for data&#39;</span>
+Traceback (most recent call last):s
+  File <span style="background-color: #fff0f0">&quot;&lt;stdin&gt;&quot;</span>, line <span style="color: #0000DD; font-weight: bold">1</span>, <span style="color: #000000; font-weight: bold">in</span> <span style="color: #333333">&lt;</span>module<span style="color: #333333">&gt;</span>
+<span style="color: #FF0000; font-weight: bold">TypeError</span>: Can<span style="background-color: #fff0f0">&#39;t convert &#39;</span><span style="color: #007020">bytes</span><span style="background-color: #fff0f0">&#39; object to str implicitly</span>
+</pre></div>
+
+
+<p><a id='print'></a>
+<br>
+<br></p>
+
+<h3>The print statement</h3>
+
+<p>[<a href="#py23_overview">back to Python 2.x vs 3.x overview</a>]</p>
+
+<p>Very trivial, but this change makes sense, Python 3 now only accepts <code>print</code>s with proper parentheses - just like the other function calls ...</p>
+
+<p><br></p>
+
+<!-- HTML generated using hilite.me -->
+
+
+<div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #888888"># Python 2</span>
+<span style="color: #333333">&gt;&gt;&gt;</span> <span style="color: #007020">print</span> <span style="background-color: #fff0f0">&#39;Hello, World!&#39;</span>
+Hello, World<span style="color: #FF0000; background-color: #FFAAAA">!</span>
+<span style="color: #333333">&gt;&gt;&gt;</span> <span style="color: #007020">print</span>(<span style="background-color: #fff0f0">&#39;Hello, World!&#39;</span>)
+Hello, World<span style="color: #FF0000; background-color: #FFAAAA">!</span>
+
+<span style="color: #888888"># Python 3</span>
+<span style="color: #333333">&gt;&gt;&gt;</span> <span style="color: #007020">print</span>(<span style="background-color: #fff0f0">&#39;Hello, World!&#39;</span>)
+Hello, World<span style="color: #FF0000; background-color: #FFAAAA">!</span>
+<span style="color: #333333">&gt;&gt;&gt;</span> <span style="color: #007020">print</span> <span style="background-color: #fff0f0">&#39;Hello, World!&#39;</span>
+  File <span style="background-color: #fff0f0">&quot;&lt;stdin&gt;&quot;</span>, line <span style="color: #0000DD; font-weight: bold">1</span>
+    <span style="color: #007020">print</span> <span style="background-color: #fff0f0">&#39;Hello, World!&#39;</span>
+                        <span style="color: #333333">^</span>
+<span style="color: #FF0000; font-weight: bold">SyntaxError</span>: invalid syntax
+</pre></div>
+
+
+<p><br></p>
+
+<p>And if we want to print the output of 2 consecutive print functions on the same line, you would use a comma in Python 2, and a <code>end=""</code> in Python 3:</p>
+
+<p><br></p>
+
+<!-- HTML generated using hilite.me -->
+
+
+<div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #888888"># Python 2</span>
+<span style="color: #333333">&gt;&gt;&gt;</span> <span style="color: #007020">print</span> <span style="background-color: #fff0f0">&quot;line 1&quot;</span>, ; <span style="color: #007020">print</span> <span style="background-color: #fff0f0">&#39;same line&#39;</span>
+line <span style="color: #0000DD; font-weight: bold">1</span> same line
+
+<span style="color: #888888"># Python 3</span>
+<span style="color: #333333">&gt;&gt;&gt;</span> <span style="color: #007020">print</span>(<span style="background-color: #fff0f0">&quot;line 1&quot;</span>, end<span style="color: #333333">=</span><span style="background-color: #fff0f0">&quot;&quot;</span>) ; <span style="color: #007020">print</span> (<span style="background-color: #fff0f0">&quot; same line&quot;</span>)
+line <span style="color: #0000DD; font-weight: bold">1</span> same line
+</pre></div>
+
+
+<p><a id='integer_div'></a>
+<br>
+<br></p>
+
+<h3>Integer division</h3>
+
+<p>[<a href="#py23_overview">back to Python 2.x vs 3.x overview</a>]</p>
+
+<p>This is a pretty dangerous thing if you are porting code, or executing Python 3 code in Python 2 since the change in integer-division behavior can often go unnoticed.<br/>
+So, I still tend to use a <code>float(3)/2</code> or <code>3/2.0</code> instead of a <code>3/2</code> in my Python 3 scripts to save the Python 2 guys some trouble ... (PS: and vice versa, you can <code>from __future__ import division</code> in your Python 2 scripts).</p>
+
+<p><br></p>
+
+<!-- HTML generated using hilite.me -->
+
+
+<div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #888888"># Python 2</span>
+<span style="color: #333333">&gt;&gt;&gt;</span> <span style="color: #0000DD; font-weight: bold">3</span> <span style="color: #333333">/</span> <span style="color: #0000DD; font-weight: bold">2</span>
+<span style="color: #0000DD; font-weight: bold">1</span>
+<span style="color: #333333">&gt;&gt;&gt;</span> <span style="color: #0000DD; font-weight: bold">3</span> <span style="color: #333333">//</span> <span style="color: #0000DD; font-weight: bold">2</span>
+<span style="color: #0000DD; font-weight: bold">1</span>
+<span style="color: #333333">&gt;&gt;&gt;</span> <span style="color: #0000DD; font-weight: bold">3</span> <span style="color: #333333">/</span> <span style="color: #6600EE; font-weight: bold">2.0</span>
+<span style="color: #6600EE; font-weight: bold">1.5</span>
+<span style="color: #333333">&gt;&gt;&gt;</span> <span style="color: #0000DD; font-weight: bold">3</span> <span style="color: #333333">//</span> <span style="color: #6600EE; font-weight: bold">2.0</span>
+<span style="color: #6600EE; font-weight: bold">1.0</span>
+
+<span style="color: #888888"># Python 3</span>
+<span style="color: #333333">&gt;&gt;&gt;</span> <span style="color: #0000DD; font-weight: bold">3</span> <span style="color: #333333">/</span> <span style="color: #0000DD; font-weight: bold">2</span>
+<span style="color: #6600EE; font-weight: bold">1.5</span>
+<span style="color: #333333">&gt;&gt;&gt;</span> <span style="color: #0000DD; font-weight: bold">3</span> <span style="color: #333333">//</span> <span style="color: #0000DD; font-weight: bold">2</span>
+<span style="color: #0000DD; font-weight: bold">1</span>
+<span style="color: #333333">&gt;&gt;&gt;</span> <span style="color: #0000DD; font-weight: bold">3</span> <span style="color: #333333">/</span> <span style="color: #6600EE; font-weight: bold">2.0</span>
+<span style="color: #6600EE; font-weight: bold">1.5</span>
+<span style="color: #333333">&gt;&gt;&gt;</span> <span style="color: #0000DD; font-weight: bold">3</span> <span style="color: #333333">//</span> <span style="color: #6600EE; font-weight: bold">2.0</span>
+<span style="color: #6600EE; font-weight: bold">1.0</span>
+</pre></div>
+
+
+<p><a id='xrange'></a>
+<br>
+<br></p>
+
+<h3><code>xrange()</code></h3>
+
+<p>[<a href="#py23_overview">back to Python 2.x vs 3.x overview</a>]</p>
+
+<p><code>xrange()</code> was pretty popular in Python 2.x if you wanted to create an iterable object. The behavior was quite similar to a generator ('lazy evaluation'), but you could iterate over it infinitely. The advantage was that it was generally faster than <code>range()</code> (e.g., in a for-loop) - not if you had to iterate over the list multiple times, since the generation happens every time from scratch!<br/>
+In Python 3, the <code>range()</code> was implemented like the <code>xrange()</code> function so that a dedicated <code>xrange()</code> function does not exist anymore.</p>
+
+<!-- HTML generated using hilite.me -->
+
+
+<div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #888888"># Python 2</span>
+<span style="color: #333333">&gt;</span> python <span style="color: #333333">-</span>m timeit <span style="background-color: #fff0f0">&#39;for i in range(1000000):&#39;</span> <span style="background-color: #fff0f0">&#39; pass&#39;</span>
+<span style="color: #0000DD; font-weight: bold">10</span> loops, best of <span style="color: #0000DD; font-weight: bold">3</span>: <span style="color: #0000DD; font-weight: bold">66</span> msec per loop
+
+    <span style="color: #333333">&gt;</span> python <span style="color: #333333">-</span>m timeit <span style="background-color: #fff0f0">&#39;for i in xrange(1000000):&#39;</span> <span style="background-color: #fff0f0">&#39; pass&#39;</span>
+<span style="color: #0000DD; font-weight: bold">10</span> loops, best of <span style="color: #0000DD; font-weight: bold">3</span>: <span style="color: #6600EE; font-weight: bold">27.8</span> msec per loop
+
+<span style="color: #888888"># Python 3</span>
+<span style="color: #333333">&gt;</span> python3 <span style="color: #333333">-</span>m timeit <span style="background-color: #fff0f0">&#39;for i in range(1000000):&#39;</span> <span style="background-color: #fff0f0">&#39; pass&#39;</span>
+<span style="color: #0000DD; font-weight: bold">10</span> loops, best of <span style="color: #0000DD; font-weight: bold">3</span>: <span style="color: #6600EE; font-weight: bold">51.1</span> msec per loop
+
+<span style="color: #333333">&gt;</span> python3 <span style="color: #333333">-</span>m timeit <span style="background-color: #fff0f0">&#39;for i in xrange(1000000):&#39;</span> <span style="background-color: #fff0f0">&#39; pass&#39;</span>
+Traceback (most recent call last):
+  File <span style="background-color: #fff0f0">&quot;/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/timeit.py&quot;</span>, line <span style="color: #0000DD; font-weight: bold">292</span>, <span style="color: #000000; font-weight: bold">in</span> main
+    x <span style="color: #333333">=</span> t<span style="color: #333333">.</span>timeit(number)
+  File <span style="background-color: #fff0f0">&quot;/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/timeit.py&quot;</span>, line <span style="color: #0000DD; font-weight: bold">178</span>, <span style="color: #000000; font-weight: bold">in</span> timeit
+    timing <span style="color: #333333">=</span> <span style="color: #007020">self</span><span style="color: #333333">.</span>inner(it, <span style="color: #007020">self</span><span style="color: #333333">.</span>timer)
+  File <span style="background-color: #fff0f0">&quot;&lt;timeit-src&gt;&quot;</span>, line <span style="color: #0000DD; font-weight: bold">6</span>, <span style="color: #000000; font-weight: bold">in</span> inner
+    <span style="color: #008800; font-weight: bold">for</span> i <span style="color: #000000; font-weight: bold">in</span> xrange(<span style="color: #0000DD; font-weight: bold">1000000</span>):
+<span style="color: #FF0000; font-weight: bold">NameError</span>: name <span style="background-color: #fff0f0">&#39;xrange&#39;</span> <span style="color: #000000; font-weight: bold">is</span> <span style="color: #000000; font-weight: bold">not</span> defined
+</pre></div>
+
+
+<p><a id='raising_exceptions'></a>
+<br>
+<br></p>
+
+<h3>Raising exceptions</h3>
+
+<p>[<a href="#py23_overview">back to Python 2.x vs 3.x overview</a>]</p>
+
+<p>Where Python 2 accepts both notations, the 'old' and the 'new' way, Python 3 chokes (and raises a <code>SyntaxError</code> in turn) if we don't enclose the exception argument in parentheses:</p>
+
+<p><br></p>
+
+<!-- HTML generated using hilite.me -->
+
+
+<div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #888888"># Python 2</span>
+<span style="color: #333333">&gt;&gt;&gt;</span> <span style="color: #008800; font-weight: bold">raise</span> <span style="color: #FF0000; font-weight: bold">IOError</span>, <span style="background-color: #fff0f0">&quot;file error&quot;</span>
+Traceback (most recent call last):
+  File <span style="background-color: #fff0f0">&quot;&lt;stdin&gt;&quot;</span>, line <span style="color: #0000DD; font-weight: bold">1</span>, <span style="color: #000000; font-weight: bold">in</span> <span style="color: #333333">&lt;</span>module<span style="color: #333333">&gt;</span>
+<span style="color: #FF0000; font-weight: bold">IOError</span>: file error
+<span style="color: #333333">&gt;&gt;&gt;</span> <span style="color: #008800; font-weight: bold">raise</span> <span style="color: #FF0000; font-weight: bold">IOError</span>(<span style="background-color: #fff0f0">&quot;file error&quot;</span>)
+Traceback (most recent call last):
+  File <span style="background-color: #fff0f0">&quot;&lt;stdin&gt;&quot;</span>, line <span style="color: #0000DD; font-weight: bold">1</span>, <span style="color: #000000; font-weight: bold">in</span> <span style="color: #333333">&lt;</span>module<span style="color: #333333">&gt;</span>
+<span style="color: #FF0000; font-weight: bold">IOError</span>: file error
+
+    
+<span style="color: #888888"># Python 3    </span>
+<span style="color: #333333">&gt;&gt;&gt;</span> <span style="color: #008800; font-weight: bold">raise</span> <span style="color: #FF0000; font-weight: bold">IOError</span>, <span style="background-color: #fff0f0">&quot;file error&quot;</span>
+  File <span style="background-color: #fff0f0">&quot;&lt;stdin&gt;&quot;</span>, line <span style="color: #0000DD; font-weight: bold">1</span>
+    <span style="color: #008800; font-weight: bold">raise</span> <span style="color: #FF0000; font-weight: bold">IOError</span>, <span style="background-color: #fff0f0">&quot;file error&quot;</span>
+                 <span style="color: #333333">^</span>
+<span style="color: #FF0000; font-weight: bold">SyntaxError</span>: invalid syntax
+<span style="color: #333333">&gt;&gt;&gt;</span> <span style="color: #008800; font-weight: bold">raise</span> <span style="color: #FF0000; font-weight: bold">IOError</span>(<span style="background-color: #fff0f0">&quot;file error&quot;</span>)
+Traceback (most recent call last):
+  File <span style="background-color: #fff0f0">&quot;&lt;stdin&gt;&quot;</span>, line <span style="color: #0000DD; font-weight: bold">1</span>, <span style="color: #000000; font-weight: bold">in</span> <span style="color: #333333">&lt;</span>module<span style="color: #333333">&gt;</span>
+<span style="color: #FF0000; font-weight: bold">OSError</span>: file error
+</pre></div>
+
+
+<p><a id='handling_exceptions'></a>
+<br>
+<br></p>
+
+<h3>Handling exceptions</h3>
+
+<p>[<a href="#py23_overview">back to Python 2.x vs 3.x overview</a>]</p>
+
+<p>Also the handling of exceptions has slightly changed in Python 3. Now, we have to use the <code>as</code> keyword!</p>
+
+<!-- HTML generated using hilite.me -->
+
+
+<div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #888888"># Python 2</span>
+<span style="color: #333333">&gt;&gt;&gt;</span> <span style="color: #008800; font-weight: bold">try</span>:
+<span style="color: #333333">...</span>     blabla
+<span style="color: #333333">...</span> <span style="color: #008800; font-weight: bold">except</span> <span style="color: #FF0000; font-weight: bold">NameError</span>, err:
+<span style="color: #333333">...</span>     <span style="color: #007020">print</span> err, <span style="background-color: #fff0f0">&#39;--&gt; our error msg&#39;</span>
+<span style="color: #333333">...</span> 
+name <span style="background-color: #fff0f0">&#39;blabla&#39;</span> <span style="color: #000000; font-weight: bold">is</span> <span style="color: #000000; font-weight: bold">not</span> defined <span style="color: #333333">--&gt;</span> our error msg
+
+<span style="color: #888888"># Python 3</span>
+<span style="color: #333333">&gt;&gt;&gt;</span> <span style="color: #008800; font-weight: bold">try</span>:
+<span style="color: #333333">...</span>     blabla
+<span style="color: #333333">...</span> <span style="color: #008800; font-weight: bold">except</span> <span style="color: #FF0000; font-weight: bold">NameError</span> <span style="color: #008800; font-weight: bold">as</span> err:
+<span style="color: #333333">...</span>     <span style="color: #007020">print</span>(err, <span style="background-color: #fff0f0">&#39;--&gt; our error msg&#39;</span>)
+<span style="color: #333333">...</span> 
+name <span style="background-color: #fff0f0">&#39;blabla&#39;</span> <span style="color: #000000; font-weight: bold">is</span> <span style="color: #000000; font-weight: bold">not</span> defined <span style="color: #333333">--&gt;</span> our error msg
+</pre></div>
+
+
+<p><a id='next_next'></a>
+<br>
+<br></p>
+
+<h3>The <code>next()</code> function and <code>.next()</code> method</h3>
+
+<p>[<a href="#py23_overview">back to Python 2.x vs 3.x overview</a>]</p>
+
+<p>Where you can use both function and method in Python 2.7.5, the <code>next()</code> function is all that remain in Python 3!</p>
+
+<!-- HTML generated using hilite.me -->
+
+
+<div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #888888"># Python 2</span>
+<span style="color: #333333">&gt;&gt;&gt;</span> my_generator <span style="color: #333333">=</span> (letter <span style="color: #008800; font-weight: bold">for</span> letter <span style="color: #000000; font-weight: bold">in</span> <span style="background-color: #fff0f0">&#39;abcdefg&#39;</span>)
+<span style="color: #333333">&gt;&gt;&gt;</span> my_generator<span style="color: #333333">.</span>next()
+<span style="background-color: #fff0f0">&#39;a&#39;</span>
+<span style="color: #333333">&gt;&gt;&gt;</span> <span style="color: #007020">next</span>(my_generator)
+<span style="background-color: #fff0f0">&#39;b&#39;</span>
+
+<span style="color: #888888"># Python 3</span>
+<span style="color: #333333">&gt;&gt;&gt;</span> my_generator <span style="color: #333333">=</span> (letter <span style="color: #008800; font-weight: bold">for</span> letter <span style="color: #000000; font-weight: bold">in</span> <span style="background-color: #fff0f0">&#39;abcdefg&#39;</span>)
+<span style="color: #333333">&gt;&gt;&gt;</span> <span style="color: #007020">next</span>(my_generator)
+<span style="background-color: #fff0f0">&#39;a&#39;</span>
+<span style="color: #333333">&gt;&gt;&gt;</span> my_generator<span style="color: #333333">.</span>next()
+Traceback (most recent call last):
+  File <span style="background-color: #fff0f0">&quot;&lt;stdin&gt;&quot;</span>, line <span style="color: #0000DD; font-weight: bold">1</span>, <span style="color: #000000; font-weight: bold">in</span> <span style="color: #333333">&lt;</span>module<span style="color: #333333">&gt;</span>
+<span style="color: #FF0000; font-weight: bold">AttributeError</span>: <span style="background-color: #fff0f0">&#39;generator&#39;</span> <span style="color: #007020">object</span> has no attribute <span style="background-color: #fff0f0">&#39;next&#39;</span>
+</pre></div>
+
+
+<p><a id='loop_leak'></a>
+<br>
+<br></p>
+
+<h3>In Python 3.x for-loop variables don't leak into the global namespace anymore</h3>
+
+<p>[<a href="#py23_overview">back to Python 2.x vs 3.x overview</a>]</p>
+
+<p>This goes back to a change that was made in Python 3.x and is described in <a href="https://docs.python.org/3/whatsnew/3.0.html">What’s New In Python 3.0</a> as follows:</p>
+
+<p>"List comprehensions no longer support the syntactic form <code>[... for var in item1, item2, ...]</code>. Use <code>[... for var in (item1, item2, ...)]</code> instead. Also note that list comprehensions have different semantics: they are closer to syntactic sugar for a generator expression inside a <code>list()</code> constructor, and in particular the loop control variables are no longer leaked into the surrounding scope."</p>
+
+<p><br>
+<code>[In:]</code></p>
+
+<!-- HTML generated using hilite.me -->
+
+
+<div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #008800; font-weight: bold">from</span> <span style="color: #0e84b5; font-weight: bold">platform</span> <span style="color: #008800; font-weight: bold">import</span> python_version
+<span style="color: #007020">print</span>(<span style="background-color: #fff0f0">&#39;This code cell was executed in Python&#39;</span>, python_version())
+
+i <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">1</span>
+<span style="color: #007020">print</span>([i <span style="color: #008800; font-weight: bold">for</span> i <span style="color: #000000; font-weight: bold">in</span> <span style="color: #007020">range</span>(<span style="color: #0000DD; font-weight: bold">5</span>)])
+<span style="color: #007020">print</span>(i, <span style="background-color: #fff0f0">&#39;-&gt; i in global&#39;</span>)
+</pre></div>
+
+
+<p><br>
+<code>[Out:]</code></p>
+
+<!-- HTML generated using hilite.me -->
+
+
+<div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">This code cell was executed in Python 3.3.5
+[0, 1, 2, 3, 4]
+1 -&gt; i in global
+</pre></div>
+
+
+<p><br>
+<br>
+<br>
+<code>[In:]</code></p>
+
+<!-- HTML generated using hilite.me -->
+
+
+<div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #008800; font-weight: bold">from</span> <span style="color: #0e84b5; font-weight: bold">platform</span> <span style="color: #008800; font-weight: bold">import</span> python_version
+<span style="color: #007020">print</span> <span style="background-color: #fff0f0">&#39;This code cell was executed in Python&#39;</span>, python_version()
+
+i <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">1</span>
+<span style="color: #007020">print</span> [i <span style="color: #008800; font-weight: bold">for</span> i <span style="color: #000000; font-weight: bold">in</span> <span style="color: #007020">range</span>(<span style="color: #0000DD; font-weight: bold">5</span>)]
+<span style="color: #007020">print</span> i, <span style="background-color: #fff0f0">&#39;-&gt; i in global&#39;</span> 
+</pre></div>
+
+
+<p><br>
+<code>[Out:]</code></p>
+
+<!-- HTML generated using hilite.me -->
+
+
+<div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">This code cell was executed in Python 2.7.6
+[0, 1, 2, 3, 4]
+4 -&gt; i in global
+</pre></div>
+
+
+<p><a id='compare_unorder'></a>
+<br>
+<br></p>
+
+<h4>Python 3.x prevents us from comparing unorderable types</h4>
+
+<p>[<a href="#py23_overview">back to Python 2.x vs 3.x overview</a>]</p>
+
+<p><br>
+<code>[In:]</code></p>
+
+<!-- HTML generated using hilite.me -->
+
+
+<div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #008800; font-weight: bold">from</span> <span style="color: #0e84b5; font-weight: bold">platform</span> <span style="color: #008800; font-weight: bold">import</span> python_version
+<span style="color: #007020">print</span> <span style="background-color: #fff0f0">&#39;This code cell was executed in Python&#39;</span>, python_version()
+
+<span style="color: #007020">print</span> [<span style="color: #0000DD; font-weight: bold">1</span>, <span style="color: #0000DD; font-weight: bold">2</span>] <span style="color: #333333">&gt;</span> <span style="background-color: #fff0f0">&#39;foo&#39;</span>
+<span style="color: #007020">print</span> (<span style="color: #0000DD; font-weight: bold">1</span>, <span style="color: #0000DD; font-weight: bold">2</span>) <span style="color: #333333">&gt;</span> <span style="background-color: #fff0f0">&#39;foo&#39;</span>
+<span style="color: #007020">print</span> [<span style="color: #0000DD; font-weight: bold">1</span>, <span style="color: #0000DD; font-weight: bold">2</span>] <span style="color: #333333">&gt;</span> (<span style="color: #0000DD; font-weight: bold">1</span>, <span style="color: #0000DD; font-weight: bold">2</span>)
+</pre></div>
+
+
+<p><br>
+<code>[Out:]</code></p>
+
+<!-- HTML generated using hilite.me -->
+
+
+<div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">This code cell was executed in Python 2.7.6
+False
+True
+False
+</pre></div>
+
+
+<p><br>
+<br>
+<br></p>
+
+<p><code>[In:]</code></p>
+
+<!-- HTML generated using hilite.me -->
+
+
+<div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #008800; font-weight: bold">from</span> <span style="color: #0e84b5; font-weight: bold">platform</span> <span style="color: #008800; font-weight: bold">import</span> python_version
+<span style="color: #007020">print</span>(<span style="background-color: #fff0f0">&#39;This code cell was executed in Python&#39;</span>, python_version())
+
+<span style="color: #007020">print</span>([<span style="color: #0000DD; font-weight: bold">1</span>, <span style="color: #0000DD; font-weight: bold">2</span>] <span style="color: #333333">&gt;</span> <span style="background-color: #fff0f0">&#39;foo&#39;</span>)
+<span style="color: #007020">print</span>((<span style="color: #0000DD; font-weight: bold">1</span>, <span style="color: #0000DD; font-weight: bold">2</span>) <span style="color: #333333">&gt;</span> <span style="background-color: #fff0f0">&#39;foo&#39;</span>)
+<span style="color: #007020">print</span>([<span style="color: #0000DD; font-weight: bold">1</span>, <span style="color: #0000DD; font-weight: bold">2</span>] <span style="color: #333333">&gt;</span> (<span style="color: #0000DD; font-weight: bold">1</span>, <span style="color: #0000DD; font-weight: bold">2</span>))
+</pre></div>
+
+
+<p><code>[Out:]</code></p>
+
+<!-- HTML generated using hilite.me -->
+
+
+<div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">This code cell was executed <span style="color: #000000; font-weight: bold">in</span> Python <span style="color: #6600EE; font-weight: bold">3.3</span><span style="color: #333333">.</span><span style="color: #0000DD; font-weight: bold">5</span>
+<span style="color: #333333">---------------------------------------------------------------------------</span>
+<span style="color: #FF0000; font-weight: bold">TypeError</span>                                 Traceback (most recent call last)
+<span style="color: #333333">&lt;</span>ipython<span style="color: #333333">-</span><span style="color: #007020">input</span><span style="color: #333333">-</span><span style="color: #0000DD; font-weight: bold">3</span><span style="color: #333333">-</span><span style="color: #0000DD; font-weight: bold">1</span>d774c677f73<span style="color: #333333">&gt;</span> <span style="color: #000000; font-weight: bold">in</span> <span style="color: #333333">&lt;</span>module<span style="color: #333333">&gt;</span>()
+      <span style="color: #0000DD; font-weight: bold">2</span> <span style="color: #007020">print</span>(<span style="background-color: #fff0f0">&#39;This code cell was executed in Python&#39;</span>, python_version())
+      <span style="color: #0000DD; font-weight: bold">3</span> 
+<span style="color: #333333">----&gt;</span> <span style="color: #0000DD; font-weight: bold">4</span> [<span style="color: #0000DD; font-weight: bold">1</span>, <span style="color: #0000DD; font-weight: bold">2</span>] <span style="color: #333333">&gt;</span> <span style="background-color: #fff0f0">&#39;foo&#39;</span>
+      <span style="color: #0000DD; font-weight: bold">5</span> (<span style="color: #0000DD; font-weight: bold">1</span>, <span style="color: #0000DD; font-weight: bold">2</span>) <span style="color: #333333">&gt;</span> <span style="background-color: #fff0f0">&#39;foo&#39;</span>
+      <span style="color: #0000DD; font-weight: bold">6</span> [<span style="color: #0000DD; font-weight: bold">1</span>, <span style="color: #0000DD; font-weight: bold">2</span>] <span style="color: #333333">&gt;</span> (<span style="color: #0000DD; font-weight: bold">1</span>, <span style="color: #0000DD; font-weight: bold">2</span>)
+
+<span style="color: #FF0000; font-weight: bold">TypeError</span>: unorderable types: <span style="color: #007020">list</span>() <span style="color: #333333">&gt;</span> <span style="color: #007020">str</span>()
+</pre></div>
+
+</body>
+</html>
