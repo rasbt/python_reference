@@ -13,10 +13,15 @@ last updated: 05/24/2014
 <br>
 
 There are some good articles already that are summarizing the differences between Python 2 and 3, e.g.,  
+
 - [https://wiki.python.org/moin/Python2orPython3](https://wiki.python.org/moin/Python2orPython3)
+
 - [https://docs.python.org/3.0/whatsnew/3.0.html](https://docs.python.org/3.0/whatsnew/3.0.html)
+
 - [http://python3porting.com/differences.html](http://python3porting.com/differences.html)
+
 - [https://docs.python.org/3/howto/pyporting.html](https://docs.python.org/3/howto/pyporting.html)  
+
 etc.
 
 But it might be still worthwhile, especially for Python newcomers, to take a look at some of those!
