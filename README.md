@@ -18,8 +18,10 @@ A collection of useful scripts, tutorials, and other Python-related things
 
 - A collection of not so obvious Python stuff you should know! [[IPython nb](http://nbviewer.ipython.org/github/rasbt/python_reference/blob/master/not_so_obvious_python_stuff.ipynb?create=1)]
 
+
 - Python's scope resolution for variable names and the LEGB rule [[IPython nb](http://nbviewer.ipython.org/github/rasbt/python_reference/blob/master/tutorials/scope_resolution_legb_rule.ipynb?create=1)]
 
+- Key differences between Python 2.x and Python 3.x [[Markdown](./tutorials/key_differences_python2_python3.md)] 
 
 
 - A thorough guide to SQLite database operations in Python [[Markdown](./sqlite3_howto/README.md)]  
