@@ -1761,6 +1761,7 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'">'+'email'+'<\/'+'a'+'>');
 <li><p><a href="#The-next-function-and-next-method">The next() function and .next() method</a></p></li>
 <li><p><a href="#For-loop-variables-and-the-global-namespace-leak">For-loop variables and the global namespace leak</a></p></li>
 <li><p><a href="#Comparing-unorderable-types">Comparing unorderable types</a></p></li>
+<li><p><a href="#Parsing-user-inputs-via-input">Parsing user inputs via input()</a></p></li>
 <li><p><a href="#More-articles-about-Python-2-and-Python-3">More articles about Python 2 and Python 3</a></p></li>
 </ul>
 </div>
@@ -1926,7 +1927,7 @@ unicode_literals
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">
-In&nbsp;[1]:
+In&nbsp;[3]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
@@ -3714,6 +3715,124 @@ Python 3.4.1
 </div>
 </div>
 
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><br> <br></p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><a id='Parsing-user-inputs-via-input'></a></p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Parsing-user-inputs-via-input()">Parsing user inputs via input()<a class="anchor-link" href="#Parsing-user-inputs-via-input()">&#182;</a></h2>
+</div>
+</div>
+</div>
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>[<a href="#Sections">back to the section-overview</a>]</p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Fortunately, the <code>input()</code> function was fixed in Python 3 so that it always stores the user inputs as <code>str</code> objects. In order to avoid the dangerous behavior in Python 2 to read in other types than <code>strings</code>, we have to use <code>raw_input()</code> instead.</p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="python-2">Python 2</h4>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">Python <span style="color: #6600EE; font-weight: bold">2.7</span><span style="color: #333333">.</span><span style="color: #0000DD; font-weight: bold">6</span> 
+[GCC <span style="color: #6600EE; font-weight: bold">4.0</span><span style="color: #333333">.</span><span style="color: #0000DD; font-weight: bold">1</span> (Apple Inc<span style="color: #333333">.</span> build <span style="color: #0000DD; font-weight: bold">5493</span>)] on darwin
+Type <span style="background-color: #fff0f0">&quot;help&quot;</span>, <span style="background-color: #fff0f0">&quot;copyright&quot;</span>, <span style="background-color: #fff0f0">&quot;credits&quot;</span> <span style="color: #000000; font-weight: bold">or</span> <span style="background-color: #fff0f0">&quot;license&quot;</span> <span style="color: #008800; font-weight: bold">for</span> more information<span style="color: #333333">.</span>
+
+<span style="color: #333333">&gt;&gt;&gt;</span> my_input <span style="color: #333333">=</span> <span style="color: #007020">input</span>(<span style="background-color: #fff0f0">&#39;enter a number: &#39;</span>)
+
+enter a number: <span style="color: #0000DD; font-weight: bold">123</span>
+
+<span style="color: #333333">&gt;&gt;&gt;</span> <span style="color: #007020">type</span>(my_input)
+<span style="color: #333333">&lt;</span><span style="color: #007020">type</span> <span style="background-color: #fff0f0">&#39;int&#39;</span><span style="color: #333333">&gt;</span>
+
+<span style="color: #333333">&gt;&gt;&gt;</span> my_input <span style="color: #333333">=</span> raw_input(<span style="background-color: #fff0f0">&#39;enter a number: &#39;</span>)
+
+enter a number: <span style="color: #0000DD; font-weight: bold">123</span>
+
+<span style="color: #333333">&gt;&gt;&gt;</span> <span style="color: #007020">type</span>(my_input)
+<span style="color: #333333">&lt;</span><span style="color: #007020">type</span> <span style="background-color: #fff0f0">&#39;str&#39;</span><span style="color: #333333">&gt;</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><br></p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="python-3">Python 3</h4>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">Python <span style="color: #6600EE; font-weight: bold">3.4</span><span style="color: #333333">.</span><span style="color: #0000DD; font-weight: bold">1</span> 
+[GCC <span style="color: #6600EE; font-weight: bold">4.2</span><span style="color: #333333">.</span><span style="color: #0000DD; font-weight: bold">1</span> (Apple Inc<span style="color: #333333">.</span> build <span style="color: #0000DD; font-weight: bold">5577</span>)] on darwin
+Type <span style="background-color: #fff0f0">&quot;help&quot;</span>, <span style="background-color: #fff0f0">&quot;copyright&quot;</span>, <span style="background-color: #fff0f0">&quot;credits&quot;</span> <span style="color: #000000; font-weight: bold">or</span> <span style="background-color: #fff0f0">&quot;license&quot;</span> <span style="color: #008800; font-weight: bold">for</span> more information<span style="color: #333333">.</span>
+
+<span style="color: #333333">&gt;&gt;&gt;</span> my_input <span style="color: #333333">=</span> <span style="color: #007020">input</span>(<span style="background-color: #fff0f0">&#39;enter a number: &#39;</span>)
+
+enter a number: <span style="color: #0000DD; font-weight: bold">123</span>
+
+<span style="color: #333333">&gt;&gt;&gt;</span> <span style="color: #007020">type</span>(my_input)
+<span style="color: #333333">&lt;</span><span style="color: #008800; font-weight: bold">class</span> <span style="color: #FF0000; background-color: #FFAAAA">&#39;</span><span style="color: #BB0066; font-weight: bold">str</span><span style="background-color: #fff0f0">&#39;&gt;</span>
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
