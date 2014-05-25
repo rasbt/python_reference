@@ -1762,6 +1762,7 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'">'+'email'+'<\/'+'a'+'>');
 <li><p><a href="#For-loop-variables-and-the-global-namespace-leak">For-loop variables and the global namespace leak</a></p></li>
 <li><p><a href="#Comparing-unorderable-types">Comparing unorderable types</a></p></li>
 <li><p><a href="#Parsing-user-inputs-via-input">Parsing user inputs via input()</a></p></li>
+<li><p><a href="#Returning-iterable-objects-instead-of-lists">Returning iterable objects instead of lists</a></p></li>
 <li><p><a href="#More-articles-about-Python-2-and-Python-3">More articles about Python 2 and Python 3</a></p></li>
 </ul>
 </div>
@@ -3989,6 +3990,163 @@ enter a number: <span style="color: #0000DD; font-weight: bold">123</span>
 <span style="color: #333333">&gt;&gt;&gt;</span> <span style="color: #007020">type</span>(my_input)
 <span style="color: #333333">&lt;</span><span style="color: #008800; font-weight: bold">class</span> <span style="color: #FF0000; background-color: #FFAAAA">&#39;</span><span style="color: #BB0066; font-weight: bold">str</span><span style="background-color: #fff0f0">&#39;&gt;</span>
 </pre></div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><br> <br></p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Returning-iterable-objects-instead-of-lists">Returning iterable objects instead of lists<a class="anchor-link" href="#Returning-iterable-objects-instead-of-lists">&#182;</a></h2>
+</div>
+</div>
+</div>
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>[<a href="#Sections">back to the section-overview</a>]</p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>As we have already seen in the <a href="#xrange"><code>xrange</code></a> section, some functions and methods return iterable objects in Python 3 now - instead of lists in Python 2.</p>
+<p>Since we usually iterate over those only once anyway, I think this change makes a lot of sense to save memory. However, it is also possible - in contrast to generators - to iterate over those multiple times if needed, it is aonly not so efficient.</p>
+<p>And for those cases where we really need the <code>list</code>-objects, we can simply convert the iterable object into a <code>list</code> via the <code>list()</code> function.</p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="python-2">Python 2</h4>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">
+In&nbsp;[2]:
+</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class="highlight"><pre><span class="k">print</span> <span class="s">&#39;Python&#39;</span><span class="p">,</span> <span class="n">python_version</span><span class="p">()</span> 
+
+<span class="k">print</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span> 
+<span class="k">print</span> <span class="nb">type</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">))</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>
+Python 2.7.6
+[0, 1, 2]
+&lt;type &apos;list&apos;&gt;
+
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="python-3">Python 3</h4>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">
+In&nbsp;[7]:
+</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class="highlight"><pre><span class="k">print</span><span class="p">(</span><span class="s">&#39;Python&#39;</span><span class="p">,</span> <span class="n">python_version</span><span class="p">())</span>
+
+<span class="k">print</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">))</span>
+<span class="k">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">)))</span>
+<span class="k">print</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">)))</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>
+Python 3.4.1
+range(0, 3)
+&lt;class &apos;range&apos;&gt;
+[0, 1, 2]
+
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><br></p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Some more commonly used functions and methods that don't return lists anymore in Python 3:</strong></p>
+<ul>
+<li><p><code>zip()</code></p></li>
+<li><p><code>map()</code></p></li>
+<li><p><code>filter()</code></p></li>
+<li><p>dictionary's <code>.keys()</code> method</p></li>
+<li><p>dictionary's <code>.values()</code> method</p></li>
+<li><p>dictionary's <code>.items()</code> method</p></li>
+</ul>
 </div>
 </div>
 </div>
