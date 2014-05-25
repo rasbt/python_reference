@@ -1848,7 +1848,7 @@ generators
 2.3
 </td>
 <td>
-<a class="pep reference external" href="http://www.python.org/dev/peps/pep-0255"><strong>PEP 255</strong></a>: <em>Simple Generators</em>
+<a href="http://www.python.org/dev/peps/pep-0255"><strong>PEP 255</strong></a>: <em>Simple Generators</em>
 </td>
 </tr>
 <tr><td>
@@ -1861,7 +1861,7 @@ division
 3.0
 </td>
 <td>
-&lt;<a class="pep reference external" href="http://www.python.org/dev/peps/pep-0238"><strong>PEP 238</strong></a>: <em>Changing the Division Operator</em>
+<a href="http://www.python.org/dev/peps/pep-0238"><strong>PEP 238</strong></a>: <em>Changing the Division Operator</em>
 </td>
 </tr>
 <tr><td>
@@ -1927,7 +1927,7 @@ unicode_literals
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">
-In&nbsp;[3]:
+In&nbsp;[1]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
@@ -1972,8 +1972,8 @@ In&nbsp;[3]:
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Very trivial, and the change in the print-syntax is probably the most widely known change, but still it is worth mentioning: Python 2's print function doesn't require the parantheses for invoking the print function (it wouldn't choke on them).<br />In contrast, Python 3 would raise a <code>SyntaxError</code> if we called the print function the Python 2-way without the parentheses.</p>
-<p>I think this change in Python 3 makes sense in terms of consistency, since it is the common way in Python to invoke function calls with its parentheses.</p>
+<p>Very trivial, and the change in the print-syntax is probably the most widely known change, but still it is worth mentioning: Python 2's print statement has been replaced by the <code>print()</code> function, meaning that we have to wrap the object that we want to print in parantheses.</p>
+<p>Python 2 doesn't have a problem with additional parantheses, but in contrast, Python 3 would raise a <code>SyntaxError</code> if we called the print function the Python 2-way without the parentheses.</p>
 </div>
 </div>
 </div>
@@ -2103,6 +2103,51 @@ In&nbsp;[3]:
 <span class="ansired">    print &apos;Hello, World!&apos;</span>
                         ^
 <span class="ansired">SyntaxError</span><span class="ansired">:</span> invalid syntax
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Note:</strong></p>
+<p>Printing &quot;Hello, World&quot; above via Python 2 looked quite &quot;normal&quot;. However, if we have multiple objects inside the parantheses, we will create a tuple, since <code>print</code> is a &quot;statement&quot; in Python 2, not a function call.</p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">
+In&nbsp;[4]:
+</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class="highlight"><pre><span class="k">print</span> <span class="s">&#39;Python&#39;</span><span class="p">,</span> <span class="n">python_version</span><span class="p">()</span>
+<span class="k">print</span><span class="p">(</span><span class="s">&#39;a&#39;</span><span class="p">,</span> <span class="s">&#39;b&#39;</span><span class="p">)</span>
+<span class="k">print</span> <span class="s">&#39;a&#39;</span><span class="p">,</span> <span class="s">&#39;b&#39;</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>
+Python 2.7.6
+(&apos;a&apos;, &apos;b&apos;)
+a b
+
 </pre>
 </div>
 </div>
