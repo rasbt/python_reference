@@ -19,7 +19,7 @@ In this little tutorial, I want to show you in 5 simple steps how easy it is to 
 There are more sophisticated approaches using static site generators, e.g., [nikola](https://github.com/getnikola/nikola), but the focus here is to give you the brief introduction of how it generally works.
 
 
-All the files I will be using as examples in this tutorial can be download from the GitHub repository [/rasbt/python_reference/tutorials/markdown_syntax_highlighting](https://github.com/rasbt/python_reference/tutorials/markdown_syntax_highlighting)
+All the files I will be using as examples in this tutorial can be download from the GitHub repository [/rasbt/python_reference/tutorials/markdown_syntax_highlighting](https://github.com/rasbt/python_reference/tree/master/tutorials/markdown_syntax_highlighting)
 
 <br>
 <br>
