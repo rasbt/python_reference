@@ -36,6 +36,18 @@ A collection of useful scripts, tutorials, and other Python-related things
 
 
 <br>
+
+
+###// Python and the web
+
+- Creating a table of contents with internal links in IPython Notebooks and Markdown documents [[IPython nb](http://nbviewer.ipython.org/github/rasbt/python_reference/blob/master/tutorials/table_of_contents_ipython.ipynb)]  
+
+- 5 simple steps for converting Markdown documents into HTML and adding Python syntax highlighting [[Markdown](./tutorials/markdown_syntax_highlighting/README.md)] 
+
+
+
+
+<br>
 ###// benchmarks
 
 *For more recent benchmarks, please also see my separate   
@@ -51,9 +63,9 @@ GitHub repository [One-Python-benchmark-per-day](https://github.com/rasbt/One-Py
 <br>
 
 
-###// other
 
-- Creating a table of contents with internal links in IPython Notebooks and Markdown documents [[IPython nb](http://nbviewer.ipython.org/github/rasbt/python_reference/blob/master/tutorials/table_of_contents_ipython.ipynb)]   
+
+###// other 
 
 - Happy Mother's Day [[IPython nb](http://nbviewer.ipython.org/github/rasbt/python_reference/blob/master/funstuff/happy_mothers_day.ipynb?create=1)]
 
