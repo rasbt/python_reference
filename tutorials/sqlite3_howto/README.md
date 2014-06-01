@@ -6,7 +6,7 @@ _\-- written by Sebastian Raschka_ on March 7, 2014
   
   
 
-![sqlite_python_logo.png](../Images/sqlite_python_logo.png)
+<img src="../../Images/sqlite_python_logo.png" alt="">
 
   
   
@@ -29,7 +29,7 @@ _\-- written by Sebastian Raschka_ on March 7, 2014
 • Conclusion  
 
 The complete Python code that I am using in this tutorial can be downloaded
-from my GitHub repository: <https://github.com/rasbt/python_sqlite_code>  
+from my GitHub repository: [https://github.com/rasbt/python_reference/tutorials/sqlite3_howto](https://github.com/rasbt/python_reference/tutorials/sqlite3_howto)  
   
 
 * * *
@@ -123,8 +123,7 @@ there is more information about PRIMARY KEYs further down in this section).
     conn.close()
     
 
-Download the script: [create_new_db.py](https://raw.github.com/rasbt/python_sq
-lite_code/master/code/create_new_db.py)
+Download the script: [create_new_db.py](https://raw.github.com/rasbt/python_reference/master/tutorials/code/create_new_db.py)
 
 * * *
 
@@ -135,7 +134,7 @@ lite_code/master/code/create_new_db.py)
   
   
 
-![1_sqlite3_init_db.png](../Images/1_sqlite3_init_db.png)  
+![1_sqlite3_init_db.png](../../Images/1_sqlite3_init_db.png)  
   
 Using the code above, we created a new `.sqlite` database file with 2 tables.
 Each table consists of currently one column only, which is of type INTEGER.
@@ -208,12 +207,11 @@ Let's have a look at some code:
     conn.close()
     
 
-Download the script: [add_new_column.py](https://raw.github.com/rasbt/python_s
-qlite_code/master/code/add_new_column.py)
+Download the script: [add_new_column.py](https://raw.github.com/rasbt/python_reference/master/tutorials/code/add_new_column.py)
 
   
   
-![2_sqlite3_add_col.png](../Images/2_sqlite3_add_col.png)  
+![2_sqlite3_add_col.png](../../Images/2_sqlite3_add_col.png)  
   
 
 We just added 2 more columns (`my_2nd_column` and `my_3rd_column`) to
@@ -275,7 +273,7 @@ But let us first have a look at the example code:
 Download the script: [update_or_insert_records.py](https://raw.github.com/rasb
 t/python_sqlite_code/master/code/update_or_insert_records.py)  
   
-![3_sqlite3_insert_update.png](../Images/3_sqlite3_insert_update.png)  
+![3_sqlite3_insert_update.png](../../Images/3_sqlite3_insert_update.png)  
   
 Both A) `INSERT` and B) `INSERT OR IGNORE` have in common that they append new
 rows to the database if a given PRIMARY KEY does not exist in the database
@@ -340,7 +338,7 @@ drop the index, which is also shown in the code below.
 Download the script: [create_unique_index.py](https://raw.github.com/rasbt/pyt
 hon_sqlite_code/master/code/create_unique_index.py)  
   
-![4_sqlite3_unique_index.png](../Images/4_sqlite3_unique_index.png)  
+![4_sqlite3_unique_index.png](../../Images/4_sqlite3_unique_index.png)  
   
 
   
@@ -407,15 +405,14 @@ Download the script: [selecting_entries.py](https://raw.github.com/rasbt/pytho
 n_sqlite_code/master/code/selecting_entries.py)  
   
 
-![4_sqlite3_unique_index.png](../Images/4_sqlite3_unique_index.png)  
+![4_sqlite3_unique_index.png](../../Images/4_sqlite3_unique_index.png)  
   
 if we use the `.fetchall()` method, we return a list of tuples from the
 database query, where each tuple represents one row entry. The print output
 for the 5 different cases shown in the code above would look like this (note
 that we only have a table with 1 row here):  
   
-![6_sqlite3_print_selecting_rows.png](../Images/6_sqlite3_print_selecting_rows
-.png)  
+![6_sqlite3_print_selecting_rows.png](../../Images/6_sqlite3_print_selecting_rows.png)  
   
 
   
@@ -550,7 +547,7 @@ lite_code/master/code/date_time_ops.py)
 
   
   
-![5_sqlite3_date_time.png](../Images/5_sqlite3_date_time.png)  
+![5_sqlite3_date_time.png](../../Images/5_sqlite3_date_time.png)  
   
 
 Some of the really convenient functions that return the current time and date
@@ -585,7 +582,7 @@ and entries that are older than 1 day via
 Note that we don't have to provide the complete time stamps here, the same
 syntax applies to simple dates or simple times only, too.  
   
-![5_sqlite3_date_time_2.png](../Images/5_sqlite3_date_time_2.png)  
+![5_sqlite3_date_time_2.png](../../Images/5_sqlite3_date_time_2.png)  
   
 
   
@@ -651,7 +648,7 @@ column names):
 Download the script: [get_columnnames.py](https://raw.github.com/rasbt/python_
 sqlite_code/master/code/get_columnnames.py)  
   
-![7_sqlite3_get_colnames_1.png](../Images/7_sqlite3_get_colnames_1.png)  
+![7_sqlite3_get_colnames_1.png](../../Images/7_sqlite3_get_colnames_1.png)  
   
 Since we haven't created a PRIMARY KEY column for `my_table_3`, SQLite
 automatically provides an indexed `rowid` column with unique ascending integer
@@ -669,7 +666,7 @@ grab the 2nd value in each tuple of the returned list, which can be done by
 after the `PRAGMA TABLE_INFO()` call. If we would print the contents of the
 variable `names` now, the output would look like this:  
   
-![7_sqlite3_get_colnames_2.png](../Images/7_sqlite3_get_colnames_2.png)  
+![7_sqlite3_get_colnames_2.png](../../Images/7_sqlite3_get_colnames_2.png)  
   
 
   
@@ -757,9 +754,9 @@ convenient script to print a nice overview of SQLite database tables:
 Download the script: [print_db_info.py](https://raw.github.com/rasbt/python_sq
 lite_code/master/code/print_db_info.py)  
   
-![8_sqlite3_print_db_info_1.png](../Images/8_sqlite3_print_db_info_1.png)  
+![8_sqlite3_print_db_info_1.png](../../Images/8_sqlite3_print_db_info_1.png)  
   
-![8_sqlite3_print_db_info_2.png](../Images/8_sqlite3_print_db_info_2.png)
+![8_sqlite3_print_db_info_2.png](../../Images/8_sqlite3_print_db_info_2.png)
 
   
 
