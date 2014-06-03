@@ -92,7 +92,26 @@ draw the reader's attention:
 </pre>  
 </div>
 
+<br>
+<br>
+
+Note that the syntax highlighting does not only work for Python, but other programming languages.
+
+So in the case of C++, for example:
+
+	:::c++
+	#include <iostream>
  
+	int main()
+	{
+	    std::cout << "Hello, world!" << std::endl;
+ 	   return 0;
+	}
+    
+
+Since the CodeHilite extension in Python-Markdown uses Pygments, every programming language that is []listed here](http://pygments.org/languages/) currently has support for syntax highlighting.
+
+
 <br>
 <br> 
  
@@ -172,5 +191,19 @@ Now, we can insert the HTML body ([body.html](https://github.com/rasbt/python_re
 If we open our [**final.html**](https://github.com/rasbt/python_reference/blob/master/tutorials/markdown_syntax_highlighting/template.html) file in our web browser now, we can the pretty Python syntax highlighting.
 
 ![](./images/mk_syntax_final_html.png)
+
+<br>
+<br>
+
+## Useful links:
+
+
+- [Python Markdown package documentation](http://pythonhosted.org//Markdown/)
+
+- [The CodeHilite documentation](https://pythonhosted.org/Markdown/extensions/code_hilite.html)
+
+- [pygments.org](http://pygments.org)
+
+- [languages supported](http://pygments.org/languages/) by Pygments
 
 
