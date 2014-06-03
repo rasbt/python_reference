@@ -109,7 +109,7 @@ So in the case of C++, for example:
 	}
     
 
-Since the CodeHilite extension in Python-Markdown uses Pygments, every programming language that is []listed here](http://pygments.org/languages/) currently has support for syntax highlighting.
+Since the CodeHilite extension in Python-Markdown uses Pygments, every programming language that is [listed here](http://pygments.org/languages/) currently has support for syntax highlighting.
 
 
 <br>
