@@ -1,0 +1,26 @@
+.hover_light_dark{ 
+    opacity: 0.5; 
+    filter: alpha(opacity=50); 
+     no-repeat; 
+    } 
+
+.hover_light_dark:hover { 
+        opacity: 1; 
+        filter: alpha(opacity=100);
+    }
+
+
+
+.hover_dark_light{ 
+    opacity: 1; 
+    filter: alpha(opacity=100); 
+     no-repeat; 
+    } 
+
+
+.hover_dark_light:hover { 
+        opacity: 0.5; 
+        filter: alpha(opacity=500);
+    }
+
+
