@@ -1,240 +1,19 @@
-<link rel="stylesheet" type="text/css" href="../CSS/hover.css" media="screen" />
-
-
-
-
-# Numeric matrix manipulation - The cheat sheet for MATLAB, Python NumPy, R, and Julia
-
-At its core, this article is about a simple cheat sheet for basic operations on numeric matrices, which can be very useful if you working and experimenting with some of the most popular languages that are used for scientific computing, statistics, and data analysis.
-
-<a id='sections'></a>
-
-## Sections
-
-- [Introduction](#introduction)
-
-- [Language overview](#overview)
-
-	- [MATLAB/Octave](#matlab)
-	
-	- [Python NumPy](#numpy)
-	
-	- [R](#r)
-	
-	- [Julia](#julia)
-
-- [Matrix cheat sheet](#cheatsheet)
-
-- [Alternative data structures: NumPy matrices vs. NumPy arrays](#numpy_arrays)
-
-
-
-<br>
-
-
-<a id='introduction'></a>
-
-## Introduction
-
-[[back to section overview](#sections)]
-<br>
-
-Matrices (or multidimensional arrays) are not only presenting the fundamental elements of many algebraic equations that are used in many popular fields, such as pattern classification, machine learning, data mining, and math and engineering in general. But in context of scientific computing, they also come in very handy for managing and storing data in an more organized tabular form.  
-Such multidimensional data structures are also very powerful performance-wise thanks to the concept of automatic vectorization: instead of the individual and sequential processing of operations on scalars in loop-structures, the whole computation can be parallelized in order to make optimal use of modern computer architectures.  
-
-
-<br>
-
-![R matrix](../Images/matcheat_matrix.png)
-
-<br>
-<br>
-
-<font size=1em>
-<hr>
-**Note:**  
-This article originated from an older article with containing a cheat sheet that was just about MATLAB matrices and NumPy arrays. Since then, I added a couple of more rows and doubled the width of the cheat sheet by adding those two other languages R and Julia. Instead of making further modifications, I wanted to keep this old article as is - for future reference and for people who may only be interested in this slimmer version:  
-[Moving from MATLAB matrices to NumPy arrays - A Matrix Cheatsheet](http://sebastianraschka.com/Articles/2014_matlab_vs_numpy.html).
-<hr>
-</font>
-
-<br>
-<br>
-
-<a id='overview'></a>
-
-### Language overview
-
-[[back to section overview](#sections)]
-<br>
-
-Before we **[jump to the actual cheat sheet](#cheatsheet)**, I wanted to give you at least a brief overview of the different languages that we are dealing with.
-
-
-All four languages, MATLAB/Octave, Python, R, and Julia are dynamically typed, have a command line interface for the interpreter, and come with great number of additional and useful libraries to support scientific and technical computing. Conveniently, these languages also offer great solutions for easy plotting and visualizations.  
-
-Combined with interactive notebook interfaces or dynamic report generation engines ([MuPAD](http://www.mathworks.com/discovery/mupad.html) for MATLAB, [IPython Notebook](http://ipython.org/notebook.html) for Python, [knitr](http://yihui.name/knitr/) for R, and [IJulia](https://github.com/JuliaLang/IJulia.jl) for Julia based on IPython Notebook) data analysis and documentation has never been easier.
-
-<br>
-<br>
-
-<a id="matlab"></a>
-
-# MATLAB/Octave
-
-[[back to section overview](#sections)]
-<br>
-
-<br>
-<a href="http://www.mathworks.com/products/matlab/" class="hover_dark_light">
-![matlab logo](../Images/matcheat_matlab_logo.png)
-</a>
-
-<br>
-
-[MATLAB](http://www.mathworks.com/products/matlab/) (stands for MATrix LABoratory) is the name of an application and language that was developed by [MathWorks](http://www.mathworks.com/index.html?s_tid=gn_logo) back in 1984. One of its strengths is the variety of different and highly optimized "toolboxes" (including very powerful functions for image and other signal processing task), which makes suitable for tackling basically every possible science and engineering task.  
-Like the other languages, which will be covered in this article, it has cross-platform support and is using dynamic types, which allows for a convenient interface, but can also be quite "memory hungry" for computations on large data sets.
-
-Even today, MATLAB is probably (still) the most popular language for numeric computation used for engineering tasks in academia as well as in industry.
-
-#### GNU Octave
-
-<br>
-<a href="http://www.gnu.org/software/octave/" class="hover_dark_light">
-![matlab logo](../Images/matcheat_octave_logo.png)
-</a>
-
-<br>
-
-It is also worth mentioning that MATLAB is the only language in this cheat sheet which is not free and open-sourced. But since it is so immensely popular, I want to mention it nonetheless. And as an alternative there is also the free [GNU Octave re-implementation](http://www.gnu.org/software/octave/) that follows the same syntactic rules so that the code is compatible to MATLAB (except for very specialized libraries).
-
-<br>
-
-*<font size=1em> This [image](http://commons.wikimedia.org/wiki/File:Matlab_Logo.png) is a freely usable media under public domain and represents the first eigenfunction of the L-shaped membrane, resembling (but not identical to) MATLAB's logo trademarked by MathWorks Inc.</font>
-
-<br>
-<br>
-
-<a id="numpy"></a>
-
-
-
-
-# Python NumPy
-
-[[back to section overview](#sections)]
-<br>
-
-<br>
-<a href="http://www.numpy.org" class="hover_dark_light"/>
-![python logo](../Images/matcheat_numpy_logo.png)
-</a>
-
-<br>
-
-Initially, the [NumPy](http://www.numpy.org) project started out under the name "Numeric" in 1995 (renamed to NumPy in 2006) as a Python library for numeric computations based on multi-dimensional data structures, such as arrays and matrices. Since it makes use of pre-compiled C code for operations on its "`ndarray`" objects, it is considerably faster than using equivalent approaches in (C)Python.
-
-
-Python NumPy is my personal favorite since I am a big fan of the Python programming language. Although similar tools exist for other languages, I found myself to be most productive doing my research and data analyses in [IPython notebooks](http://ipython.org/notebook.html).  
-It allows me to easily combine Python code (sometimes optimized by compiling it via the [Cython](http://cython.org) C-Extension or the just-in-time (JIT) [Numba](http://numba.pydata.org) compiler if speed is a concern) with different libraries from the [Scipy stack](http://www.scipy.org/) including [matplotlib](http://matplotlib.org) for inline data visualization (you can find some of my example benchmarks in this [GitHub repository](http://github.com/rasbt/One-Python-benchmark-per-day)).
-
-<br>
-<br>
-
-<a id="r"></a>
-
-# R
-
-[[back to section overview](#sections)]
-<br>
-
-<br>
-<a href="http://www.r-project.org" class="hover_dark_light"/>
-![R logo](../Images/matcheat_R_logo.png)
-</a>
-<br>
-
-The [R](http://www.r-project.org) programming language was developed in 1993 and is a modern GNU implementation of an older statistical programming language called [S](http://stat.bell-labs.com/S/), which was developed in the [Bell Laboratories](http://stat.bell-labs.com) in 1976. Since its release, it has a fast-growing user base and is particularly popular among statisticians.  
-
-R was also the first language which kindled my fascination for statistics and computing. I have used it quite extensively a couple of years ago before I discovered Python as my new favorite language for data analysis.  
-Although R has great in-built functions for performing all sorts statistics, as well as a plethora of freely available libraries developed by the large R community, I often hear people complaining about its rather unintuitive syntax.
-
-<br>
-<br>
-
-<a id="julia"></a>
-
-# Julia
-
-[[back to section overview](#sections)]
-<br>
-
-<br>
-<a href="http://julialang.org" class="hover_dark_light"/>
-![python logo](../Images/matcheat_julia_logo.png)
-</a>
-
-<br>
-
-
-With its first release in 2012, [Julia](http://julialang.org) is by far the youngest of the programming languages mentioned in this article.  a
-While Julia can also be used as an interpreted language with dynamic types from the command line, it aims for high-performance in scientific computing that is superior to the other dynamic programming languages for technical computing thanks to its LLVM-based just-in-time (JIT) compiler.
-
-Personally, I haven't used Julia that extensively, yet, but there are some exciting benchmarks that look very promising:
-
-<a href="http://julialang.org/benchmarks/">
-![Julia benchmark](../Images/matcheat_julia_benchmark.png)
-</a>
-
-<font size=1em>
-C compiled by gcc 4.8.1, taking best timing from all optimization levels (-O0 through -O3). C, Fortran and Julia use OpenBLAS v0.2.8. The Python implementations of rand_mat_stat and rand_mat_mul use NumPy (v1.6.1) functions; the rest are pure Python implementations.<br>
-
-Bezanson, J., Karpinski, S., Shah, V.B. and Edelman, A. (2012), “Julia: A fast dynamic language for technical computing”.  
-(Source: [http://julialang.org/benchmarks/](http://julialang.org/benchmarks/), with permission from the copyright holder)
-</font>
-
-<br>
-<br>
-<br>
-<a id="cheatsheet"></a>
-<br>
-
-
-
-# Cheat sheet
-
-[[back to section overview](#sections)]
-
-<a id='cheat_overview'></a>
-<br>
-
-
-
-
-### Cheat sheet overview
-
-
-- [Creating matrices](#creating)
-
-- [Accessing matrix elements](#accessing)
-
-- [Manipulating shape](#manipulating)
-
-- [Basic matrix operations](#basic_ops)
-
-- [Advanced matrix operations](#advanced_ops)
-
-<br>
-<br>
-<br>
-<br>
-
-
-**If you are interested in downloading this cheat sheet table for your references, you can find it [here on GitHub](https://github.com/rasbt/python_reference/blob/master/tutorials/matrix_cheatsheet_only.html)**
-
-<br>
-<br>
-
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<title></title>
+	<meta name="generator" content="LibreOffice 4.2.4.2 (MacOSX)">
+	<meta name="created" content="0;0">
+	<meta name="changed" content="20140605;223752655486000">
+	<style type="text/css">
+	<!--
+		td p { color: #000000; font-family: "Verdana"; font-size: 12pt }
+		p { color: #000000; font-family: "Verdana"; font-size: 12pt }
+	-->
+	</style>
+</head>
+<body lang="en-US" text="#000000" dir="ltr" style="background: transparent">
 <table cellpadding="2" cellspacing="0" style="page-break-before: always">
 	<col width="383">
 	<col width="387">
@@ -264,9 +43,9 @@ Bezanson, J., Karpinski, S., Shah, V.B. and Edelman, A. (2012), “Julia: A fast
 		</td>
 	</tr>
 	<tr>
-		<td colspan="6" height="70" bgcolor="#ffffff" style="border: none; padding: 0in" id="creating">
+		<td colspan="6" height="70" bgcolor="#ffffff" style="border: none; padding: 0in">
 			<p align="center"><font face="Arial"><font size="4" style="font-size: 14pt"><b>CREATING
-			MATRICES </b></font></font><br>[<a href='#cheat_overview'>back to cheat sheet overview</a>]</p>
+			MATRICES</b></font></font></p>
 		</td>
 	</tr>
 	<tr valign="top">
@@ -519,9 +298,9 @@ Bezanson, J., Karpinski, S., Shah, V.B. and Edelman, A. (2012), “Julia: A fast
 		</td>
 	</tr>
 	<tr>
-		<td colspan="6" height="128" bgcolor="#ffffff" style="border: none; padding: 0in" id='accessing'>
+		<td colspan="6" height="128" bgcolor="#ffffff" style="border: none; padding: 0in">
 			<p align="center"><font face="Arial"><font size="4" style="font-size: 14pt"><b>ACCESSING
-			MATRIX ELEMENTS</b></font></font><br>[<a href='#cheat_overview'>back to cheat sheet overview</a>]</p>
+			MATRIX ELEMENTS</b></font></font></p>
 		</td>
 	</tr>
 	<tr valign="top">
@@ -714,9 +493,9 @@ Bezanson, J., Karpinski, S., Shah, V.B. and Edelman, A. (2012), “Julia: A fast
 		</td>
 	</tr>
 	<tr>
-		<td colspan="6" height="128" bgcolor="#ffffff" style="border: none; padding: 0in" id="manipulating">
+		<td colspan="6" height="128" bgcolor="#ffffff" style="border: none; padding: 0in">
 			<p align="center"><font face="Arial"><font size="4" style="font-size: 14pt"><b>MANIPULATING
-			SHAPE AND DIMENSIONS</b></font></font><br>[<a href='#cheat_overview'>back to cheat sheet overview</a>]</p>
+			SHAPE AND DIMENSIONS</b></font></font></p>
 		</td>
 	</tr>
 	<tr valign="top">
@@ -885,9 +664,9 @@ Bezanson, J., Karpinski, S., Shah, V.B. and Edelman, A. (2012), “Julia: A fast
 		</td>
 	</tr>
 	<tr>
-		<td colspan="6" height="114" bgcolor="#ffffff" style="border: none; padding: 0in" id='basic_ops'>
+		<td colspan="6" height="114" bgcolor="#ffffff" style="border: none; padding: 0in">
 			<p align="center"><font face="Arial"><font size="4" style="font-size: 14pt"><b>BASIC
-			MATRIX OPERATIONS</b></font></font><br>[<a href='#cheat_overview'>back to cheat sheet overview</a>]</p>
+			MATRIX OPERATIONS</b></font></font></p>
 		</td>
 	</tr>
 	<tr valign="top">
@@ -1232,9 +1011,9 @@ Bezanson, J., Karpinski, S., Shah, V.B. and Edelman, A. (2012), “Julia: A fast
 		</td>
 	</tr>
 	<tr>
-		<td colspan="6" height="202" bgcolor="#ffffff" style="border: none; padding: 0in" id='advanced_ops'>
+		<td colspan="6" height="202" bgcolor="#ffffff" style="border: none; padding: 0in">
 			<p align="center"><font face="Arial"><font size="4" style="font-size: 14pt"><b>ADVANCED
-			MATRIX OPERATIONS</b></font></font><br>[<a href='#cheat_overview'>back to cheat sheet overview</a>]</p>
+			MATRIX OPERATIONS</b></font></font></p>
 		</td>
 	</tr>
 	<tr valign="top">
@@ -1395,26 +1174,7 @@ Bezanson, J., Karpinski, S., Shah, V.B. and Edelman, A. (2012), “Julia: A fast
 		</td>
 	</tr>
 </table>
-<br>
-
-<br><br><font size=0.6>
-(Thanks to Keith C. Campbell for providing me with the syntax for the Julia language.)
-</font>
-
-<br>
-
-<a id='numpy_arrays'></a>
-
-
-<br>
-<br>
-<br>
-<br>
-
-### Alternative data structures: NumPy matrices vs. NumPy arrays
-
-[[back to section overview](#sections)]
-
-Python's NumPy library also has a dedicated "matrix" type with a syntax that is a little bit closer to the MATLAB matrix: For example, the "<code>  *  </code>" operator would perform a matrix-matrix multiplication of NumPy matrices - same operator performs element-wise multiplication on NumPy arrays.    
-Vice versa, the "`.dot()`" method is used for element-wise multiplication of NumPy matrices, wheras the equivalent operation would for NumPy arrays would be achieved via the "<code>  *  </code>"-operator.  
-**Most people recommend the usage of the NumPy array type over NumPy matrices, since arrays are what most of the NumPy functions return.**
+<p><!-- ************************************************************************** --><br><br>
+</p>
+</body>
+</html>

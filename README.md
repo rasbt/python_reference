@@ -77,6 +77,9 @@ GitHub repository [One-Python-benchmark-per-day](https://github.com/rasbt/One-Py
 
 - Happy Mother's Day [[IPython nb](http://nbviewer.ipython.org/github/rasbt/python_reference/blob/master/other/happy_mothers_day.ipynb?create=1)]
 
+- Numeric matrix manipulation - The cheat sheet for MATLAB, Python NumPy, R, and Julia [[Markdown](./tutorials/matrix_cheatsheet.md)]
+
+
 <br>
 
 ###// Useful scripts and snippets
