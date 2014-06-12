@@ -21,11 +21,9 @@
 
 - A collection of not so obvious Python stuff you should know! [[IPython nb](http://nbviewer.ipython.org/github/rasbt/python_reference/blob/master/tutorials/not_so_obvious_python_stuff.ipynb?create=1)]
 
-
 - Python's scope resolution for variable names and the LEGB rule [[IPython nb](http://nbviewer.ipython.org/github/rasbt/python_reference/blob/master/tutorials/scope_resolution_legb_rule.ipynb?create=1)]
 
 - Key differences between Python 2.x and Python 3.x [[IPython nb](http://nbviewer.ipython.org/github/rasbt/python_reference/blob/master/tutorials/key_differences_between_python_2_and_3.ipynb?create=1)]
-
 
 - A thorough guide to SQLite database operations in Python [[Markdown](./sqlite3_howto/README.md)]  
 
@@ -34,8 +32,10 @@
 - Installing Scientific Packages for Python3 on MacOS 10.9 Mavericks [[Markdown](./tutorials/installing_scientific_packages.md)]
 
 
-
 - Sorting CSV files using the Python csv module [[IPython nb](http://nbviewer.ipython.org/github/rasbt/python_reference/blob/master/tutorials/sorting_csvs.ipynb)]
+
+- Using Cython with and without IPython magic [[IPython nb](http://nbviewer.ipython.org/github/rasbt/python_reference/blob/master/tutorials/running_cython.ipynb)]
+
 
 
 <br>
