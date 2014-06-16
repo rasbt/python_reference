@@ -51,6 +51,16 @@
 <br>
 ###// Algorithms
 
+*The algorithms category was moved to a separate GitHub repository [rasbt/algorithms_in_ipython_notebooks](https://github.com/rasbt/algorithms_in_ipython_notebooks)*
+
+
+
+- Sorting Algorithms [[IPython nb](http://nbviewer.ipython.org/github/rasbt/algorithms_in_ipython_notebooks/blob/master/ipython_nbs/sorting/sorting_algorithms.ipynb?create=1)]
+
+- Linear regression via the least squares fit method [[IPython nb](http://nbviewer.ipython.org/github/rasbt/algorithms_in_ipython_notebooks/blob/master/ipython_nbs/statistics/linregr_least_squares_fit.ipynb?create=1)]
+
+- Dixon's Q test to identify outliers for small sample sizes [[IPython nb](hhttp://nbviewer.ipython.org/github/rasbt/algorithms_in_ipython_notebooks/blob/master/ipython_nbs/statistics/dixon_q_test.ipynb?create=1)]
+
 - Sequential Selection Algorithms [[IPython nb](http://nbviewer.ipython.org/github/rasbt/python_reference/blob/master/tutorials/sorting_csvs.ipynb)]
 
 
@@ -69,7 +79,6 @@ GitHub repository [One-Python-benchmark-per-day](https://github.com/rasbt/One-Py
 
 
 <br>
-
 
 
 
