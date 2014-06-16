@@ -87,3 +87,48 @@ GitHub repository [One-Python-benchmark-per-day](https://github.com/rasbt/One-Py
 - [Shell script](./useful_scripts/prepend_python_shebang.sh) for prepending Python-shebangs to .py files.
 
 - convert 'tab-delimited' to 'comma-separated' CSV files [[IPython nb](http://nbviewer.ipython.org/github/rasbt/python_reference/blob/master/useful_scripts/fix_tab_csv.ipynb?create=1)]
+
+
+<br>
+
+<a id='links'></a>
+
+###// Links
+
+
+
+- [PyPI - the Python Package Index](https://pypi.python.org/pypi) - the official repository for all open source Python modules and packages  
+
+- [PEP 8](http://legacy.python.org/dev/peps/pep-0008/) - The official style guide for Python code
+
+
+
+**// News**
+
+- [Python subreddit](http://www.reddit.com/r/Python/) - my favorite resource to catch up with Python news and great Python-related articles
+
+- [Python community on Google+](https://plus.google.com/communities/103393744324769547228) - a nice and friendly community to share and discuss everything about Python
+
+- [Python Weekly](http://www.pythonweekly.com) - A free weekly newsletter featuring curated news, articles, new releases, jobs etc. related to Python
+
+
+
+**// Resources for learning Python**
+
+- [Learn Python The Hard Way](http://learnpythonthehardway.org/book/) - one of the most popular and recommended resources for learning Python  
+
+- [Dive Into Python](http://www.diveintopython.net) / [Dive Into Python 3](http://getpython3.com/diveintopython3/) - a free Python book for experienced programmers
+
+- [The Hitchhiker’s Guide to Python](http://docs.python-guide.org/en/latest/) - a free best-practice handbook for both novices and experts
+
+- [Think Python - How to Think Like a Computer Scientist](http://www.greenteapress.com/thinkpython/) - an introduction for beginners starting with basic concepts of programming
+
+**// My favorite Python projects and packages**
+
+- [The IPython Notebook](http://ipython.org/notebook.html) - an interactive computational environment for combining code execution, documentation (with Markdown and LateX support), inline plots, and rich media all in one document.
+
+- [SciPy Stack](http://www.scipy.org/index.html) - Python packages (NumPy, pandas, SciPy, IPython, Matplotlib) for scientific computing
+
+- [Cython](http://cython.org) - C-extensions for Python, an optimizing static compiler to combine Python and C code
+
+- [Numba](http://numba.pydata.org) - an just-in-time specializing compiler which compiles annotated Python and NumPy code to LLVM (through decorators)
