@@ -4,7 +4,7 @@
 <h3>A collection of useful scripts, tutorials, and other Python-related things</h3>
 
 <br>
-<img src="./Images/logo.png" alt=""> </div>
+<img src="./Images/python-logo-master-v3-TM-flattened.png" alt=""> </div>
 
 
 
