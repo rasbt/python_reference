@@ -36,6 +36,7 @@
 
 - Using Cython with and without IPython magic [[IPython nb](http://nbviewer.ipython.org/github/rasbt/python_reference/blob/master/tutorials/running_cython.ipynb)]
 
+- Parallel processing via the multiprocessing module [[IPython nb](http://nbviewer.ipython.org/github/rasbt/python_reference/blob/master/tutorials/multiprocessing_intro.ipynb?create=1)]
 
 
 <br>
