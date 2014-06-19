@@ -97,6 +97,9 @@ GitHub repository [One-Python-benchmark-per-day](https://github.com/rasbt/One-Py
 
 - convert 'tab-delimited' to 'comma-separated' CSV files [[IPython nb](http://nbviewer.ipython.org/github/rasbt/python_reference/blob/master/useful_scripts/fix_tab_csv.ipynb?create=1)]
 
+- A random string generator [function](./useful_scripts/random_string_generator.py)
+
+
 
 <br>
 
