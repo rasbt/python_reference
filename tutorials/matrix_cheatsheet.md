@@ -235,6 +235,8 @@ Bezanson, J., Karpinski, S., Shah, V.B. and Edelman, A. (2012), “Julia: A fast
 <br>
 <br>
 
+
+
 <table cellpadding="2" cellspacing="0" style="page-break-before: always">
 	<col width="383">
 	<col width="387">
@@ -243,7 +245,7 @@ Bezanson, J., Karpinski, S., Shah, V.B. and Edelman, A. (2012), “Julia: A fast
 	<col width="511">
 	<col width="690">
 	<tr>
-		<td height="57" bgcolor="#0066cc" style="border: none; padding: 0in">
+		<td height="59" bgcolor="#0066cc" style="border: none; padding: 0in">
 			<p align="center"><font color="#ffffff"><font face="Arial"><font size="5" style="font-size: 18pt"><b>Task</b></font></font></font></p>
 		</td>
 		<td bgcolor="#0066cc" style="border: none; padding: 0in">
@@ -264,9 +266,9 @@ Bezanson, J., Karpinski, S., Shah, V.B. and Edelman, A. (2012), “Julia: A fast
 		</td>
 	</tr>
 	<tr>
-		<td colspan="6" height="70" bgcolor="#ffffff" style="border: none; padding: 0in" id="creating">
+		<td colspan="6" height="70" bgcolor="#ffffff" style="border: none; padding: 0in">
 			<p align="center"><font face="Arial"><font size="4" style="font-size: 14pt"><b>CREATING
-			MATRICES </b></font></font><br>[<a href='#cheat_overview'>back to cheat sheet overview</a>]</p>
+			MATRICES</b></font></font></p>
 		</td>
 	</tr>
 	<tr valign="top">
@@ -313,10 +315,15 @@ Bezanson, J., Karpinski, S., Shah, V.B. and Edelman, A. (2012), “Julia: A fast
 			3</font></font></p>
 		</td>
 		<td bgcolor="#cfe7f5" style="border-top: none; border-bottom: none; border-left: 1px dotted #000000; border-right: 1px dotted #000000; padding: 0in 0.02in">
-			<p align="left"><font face="Andale Mono"><font size="1" style="font-size: 8pt"><font color="#ff420e"><font size="2" style="font-size: 10pt"><b>P&gt;</b></font></font>
-			a = np.array([[1],[2],[3]])<br><br><font color="#ff420e"><font size="2" style="font-size: 10pt"><b>P&gt;</b></font></font>
-			a<br>array([[1],<br>&nbsp;&nbsp; &nbsp; &nbsp; [2],<br>&nbsp;&nbsp;
-			&nbsp; &nbsp; [3]])</font></font></p>
+			<p align="left"><font color="#ff420e"><font face="Andale Mono"><font size="2" style="font-size: 10pt"><b>P&gt;</b></font></font></font>
+			<font face="Andale Mono"><font size="1" style="font-size: 8pt">a</font></font><font color="#2fff12">
+			</font><font color="#000000"><font face="Andale Mono"><font size="1" style="font-size: 8pt">=
+			np.array([1,2,3]).reshape(1,3)</font></font></font></p>
+			<p align="left"><font face="Andale Mono"><font size="1" style="font-size: 8pt"><br></font></font><font color="#ff420e"><font face="Andale Mono"><font size="2" style="font-size: 10pt"><b>P&gt;</b></font></font></font>
+			<font color="#000000"><font face="Andale Mono"><font size="1" style="font-size: 8pt">b.shape<br>(1,
+			3)</font></font></font></p>
+			<p align="left"><br>
+			</p>
 		</td>
 		<td bgcolor="#cfe7f5" style="border-top: none; border-bottom: none; border-left: 1px dotted #000000; border-right: 1px dotted #000000; padding: 0in 0.02in">
 			<p align="left"><font face="Andale Mono"><font size="1" style="font-size: 8pt"><font color="#0000ff"><font size="2" style="font-size: 10pt"><b>R&gt;</b></font></font>
@@ -345,6 +352,14 @@ Bezanson, J., Karpinski, S., Shah, V.B. and Edelman, A. (2012), “Julia: A fast
 			<p align="left"><font face="Andale Mono"><font size="1" style="font-size: 8pt"><font color="#ff420e"><font size="2" style="font-size: 10pt"><b>P&gt;</b></font></font>
 			b = np.array([1,2,3])<br><br><font color="#ff420e"><font size="2" style="font-size: 10pt"><b>P&gt;</b></font></font>
 			b<br>array([1, 2, 3])</font></font></p>
+			<p align="left"><font face="Andale Mono"><font size="1" style="font-size: 8pt">#
+			note that numpy doesn't have <br># explicit “row-vectors”, but
+			1-D <br># arrays</font></font></p>
+			<p style="margin-bottom: 0in"><font face="Liberation Serif, serif"><font size="3" style="font-size: 12pt"><font color="#ff420e"><font face="Andale Mono"><font size="2" style="font-size: 10pt"><b>P&gt;</b></font></font></font><font color="#2fff12">
+			</font><font color="#000000"><font face="Andale Mono"><font size="1" style="font-size: 8pt">b.shape</font></font></font></font></font></p>
+			<p style="margin-bottom: 0in"><font face="Andale Mono"><font size="1" style="font-size: 8pt">(3,)</font></font></p>
+			<p align="left"><br>
+			</p>
 		</td>
 		<td bgcolor="#ffffff" style="border-top: none; border-bottom: none; border-left: 1px dotted #000000; border-right: 1px dotted #000000; padding: 0in 0.02in">
 			<p align="left"><font face="Andale Mono"><font size="1" style="font-size: 8pt"><font color="#0000ff"><font size="2" style="font-size: 10pt"><b>R&gt;</b></font></font>
@@ -434,7 +449,7 @@ Bezanson, J., Karpinski, S., Shah, V.B. and Edelman, A. (2012), “Julia: A fast
 		</td>
 		<td bgcolor="#cfe7f5" style="border-top: none; border-bottom: none; border-left: 1px dotted #000000; border-right: 1px dotted #000000; padding: 0in 0.02in">
 			<p align="left"><font face="Andale Mono"><font size="1" style="font-size: 8pt"><font color="#ff420e"><font size="2" style="font-size: 10pt"><b>P&gt;</b></font></font>
-			np.ones([3,2])<br>array([[ 1.,&nbsp; 1.],<br>&nbsp;&nbsp; &nbsp; &nbsp;
+			np.ones((3,2))<br>array([[ 1.,&nbsp; 1.],<br>&nbsp;&nbsp; &nbsp; &nbsp;
 			[ 1.,&nbsp; 1.],<br>&nbsp;&nbsp; &nbsp; &nbsp; [ 1.,&nbsp; 1.]])</font></font></p>
 		</td>
 		<td bgcolor="#cfe7f5" style="border-top: none; border-bottom: none; border-left: 1px dotted #000000; border-right: 1px dotted #000000; padding: 0in 0.02in">
@@ -519,9 +534,9 @@ Bezanson, J., Karpinski, S., Shah, V.B. and Edelman, A. (2012), “Julia: A fast
 		</td>
 	</tr>
 	<tr>
-		<td colspan="6" height="128" bgcolor="#ffffff" style="border: none; padding: 0in" id='accessing'>
+		<td colspan="6" height="128" bgcolor="#ffffff" style="border: none; padding: 0in">
 			<p align="center"><font face="Arial"><font size="4" style="font-size: 14pt"><b>ACCESSING
-			MATRIX ELEMENTS</b></font></font><br>[<a href='#cheat_overview'>back to cheat sheet overview</a>]</p>
+			MATRIX ELEMENTS</b></font></font></p>
 		</td>
 	</tr>
 	<tr valign="top">
@@ -714,9 +729,9 @@ Bezanson, J., Karpinski, S., Shah, V.B. and Edelman, A. (2012), “Julia: A fast
 		</td>
 	</tr>
 	<tr>
-		<td colspan="6" height="128" bgcolor="#ffffff" style="border: none; padding: 0in" id="manipulating">
+		<td colspan="6" height="128" bgcolor="#ffffff" style="border: none; padding: 0in">
 			<p align="center"><font face="Arial"><font size="4" style="font-size: 14pt"><b>MANIPULATING
-			SHAPE AND DIMENSIONS</b></font></font><br>[<a href='#cheat_overview'>back to cheat sheet overview</a>]</p>
+			SHAPE AND DIMENSIONS</b></font></font></p>
 		</td>
 	</tr>
 	<tr valign="top">
@@ -772,10 +787,10 @@ Bezanson, J., Karpinski, S., Shah, V.B. and Edelman, A. (2012), “Julia: A fast
 			A = np.array([[1,2,3],[4,5,6],[7,8,9]])<br><br><font color="#ff420e"><font size="2" style="font-size: 10pt"><b>P&gt;</b></font></font>
 			A<br>array([[1, 2, 3],<br>&nbsp;&nbsp; &nbsp; &nbsp; [4, 5, 9],<br>&nbsp;&nbsp;
 			&nbsp; &nbsp; [7, 8, 9]])<br><br><font color="#ff420e"><font size="2" style="font-size: 10pt"><b>P&gt;</b></font></font>
-			total_elements = A.shape[0] * A.shape[1]<br><br><font color="#ff420e"><font size="2" style="font-size: 10pt"><b>P&gt;</b></font></font>
-			B = A.reshape(1, total_elements)&nbsp;<br><br># or
-			A.reshape(1,9)<br># Alternative: A.shape = (1,9)&nbsp;<br>#
-			to&nbsp;change the array in place<br><br><font color="#ff420e"><font size="2" style="font-size: 10pt"><b>P&gt;</b></font></font>
+			total_elements = np.prod(A.shape)</font></font></p>
+			<p align="left"><font face="Andale Mono"><font size="1" style="font-size: 8pt"><font color="#ff420e"><font size="2" style="font-size: 10pt"><b>P&gt;</b></font></font>
+			B = A.reshape(1, total_elements)&nbsp;<br><br># alternative
+			shortcut:<br># A.reshape(1,-1)<br><br><font color="#ff420e"><font size="2" style="font-size: 10pt"><b>P&gt;</b></font></font>
 			B<br>array([[1, 2, 3, 4, 5, 6, 7, 8, 9]])</font></font></p>
 		</td>
 		<td bgcolor="#ffffff" style="border-top: none; border-bottom: none; border-left: 1px dotted #000000; border-right: 1px dotted #000000; padding: 0in 0.02in">
@@ -885,9 +900,9 @@ Bezanson, J., Karpinski, S., Shah, V.B. and Edelman, A. (2012), “Julia: A fast
 		</td>
 	</tr>
 	<tr>
-		<td colspan="6" height="114" bgcolor="#ffffff" style="border: none; padding: 0in" id='basic_ops'>
+		<td colspan="6" height="114" bgcolor="#ffffff" style="border: none; padding: 0in">
 			<p align="center"><font face="Arial"><font size="4" style="font-size: 14pt"><b>BASIC
-			MATRIX OPERATIONS</b></font></font><br>[<a href='#cheat_overview'>back to cheat sheet overview</a>]</p>
+			MATRIX OPERATIONS</b></font></font></p>
 		</td>
 	</tr>
 	<tr valign="top">
@@ -912,6 +927,9 @@ Bezanson, J., Karpinski, S., Shah, V.B. and Edelman, A. (2012), “Julia: A fast
 			A + 2<br><br><font color="#ff420e"><font size="2" style="font-size: 10pt"><b>P&gt;</b></font></font>
 			A - 2<br><br><font color="#ff420e"><font size="2" style="font-size: 10pt"><b>P&gt;</b></font></font>
 			A / 2</font></font></p>
+			<p align="left"><font face="Andale Mono"><font size="1" style="font-size: 8pt">#
+			Note that NumPy was optimized for<br># in-place assignments<br>#
+			e.g., A += A instead of <br># A = A + A</font></font></p>
 		</td>
 		<td bgcolor="#cfe7f5" style="border-top: none; border-bottom: none; border-left: 1px dotted #000000; border-right: 1px dotted #000000; padding: 0in 0.02in">
 			<p align="left"><font face="Andale Mono"><font size="1" style="font-size: 8pt"><font color="#0000ff"><font size="2" style="font-size: 10pt"><b>R&gt;</b></font></font>
@@ -1025,6 +1043,9 @@ Bezanson, J., Karpinski, S., Shah, V.B. and Edelman, A. (2012), “Julia: A fast
 			A + A<br><br><font color="#ff420e"><font size="2" style="font-size: 10pt"><b>P&gt;</b></font></font>
 			A - A<br><br><font color="#ff420e"><font size="2" style="font-size: 10pt"><b>P&gt;</b></font></font>
 			A / A</font></font></p>
+			<p align="left"><font face="Andale Mono"><font size="1" style="font-size: 8pt">#
+			Note that NumPy was optimized for<br># in-place assignments<br>#
+			e.g., A += A instead of <br># A = A + A</font></font></p>
 		</td>
 		<td bgcolor="#ffffff" style="border-top: none; border-bottom: none; border-left: 1px dotted #000000; border-right: 1px dotted #000000; padding: 0in 0.02in">
 			<p align="left"><font face="Andale Mono"><font size="1" style="font-size: 8pt"><font color="#0000ff"><font size="2" style="font-size: 10pt"><b>R&gt;</b></font></font>
@@ -1232,9 +1253,9 @@ Bezanson, J., Karpinski, S., Shah, V.B. and Edelman, A. (2012), “Julia: A fast
 		</td>
 	</tr>
 	<tr>
-		<td colspan="6" height="202" bgcolor="#ffffff" style="border: none; padding: 0in" id='advanced_ops'>
+		<td colspan="6" height="202" bgcolor="#ffffff" style="border: none; padding: 0in">
 			<p align="center"><font face="Arial"><font size="4" style="font-size: 14pt"><b>ADVANCED
-			MATRIX OPERATIONS</b></font></font><br>[<a href='#cheat_overview'>back to cheat sheet overview</a>]</p>
+			MATRIX OPERATIONS</b></font></font></p>
 		</td>
 	</tr>
 	<tr valign="top">
@@ -1328,7 +1349,7 @@ Bezanson, J., Karpinski, S., Shah, V.B. and Edelman, A. (2012), “Julia: A fast
 		</td>
 	</tr>
 	<tr valign="top">
-		<td height="539" bgcolor="#ffffff" style="border-top: none; border-bottom: none; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.02in">
+		<td height="541" bgcolor="#ffffff" style="border-top: none; border-bottom: none; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.02in">
 			<p align="left"><font face="Arial"><font size="2" style="font-size: 10pt"><b>Generating
 			a Gaussian dataset:<br><br>creating random vectors from the
 			multivariate normal<br>distribution given mean and covariance
@@ -1395,6 +1416,8 @@ Bezanson, J., Karpinski, S., Shah, V.B. and Edelman, A. (2012), “Julia: A fast
 		</td>
 	</tr>
 </table>
+
+
 <br>
 
 <br><br><font size=0.6>
