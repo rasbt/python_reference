@@ -38,6 +38,8 @@
 
 - Parallel processing via the multiprocessing module [[IPython nb](http://nbviewer.ipython.org/github/rasbt/python_reference/blob/master/tutorials/multiprocessing_intro.ipynb?create=1)]
 
+- Entry point: Data - using sci-packages to prepare data for Machine Learning tasks and other data analyses [[IPython nb](http://nbviewer.ipython.org/github/rasbt/python_reference/blob/master/tutorials/python_data_entry_point.ipynb?create=1)]
+
 
 <br>
 
