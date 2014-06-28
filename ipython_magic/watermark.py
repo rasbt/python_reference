@@ -2,7 +2,7 @@
 Sebastian Raschka 2014
 
 watermark.py
-version 1.0.2
+version 1.0.3
 
 
 IPython magic function to print date/time stamps and various system information.
@@ -18,19 +18,25 @@ Usage:
     %watermark
     
     optional arguments:
-      -d, --date            prints current date
-      -n, --datename        prints date with abbrv. day and month names
-      -t, --time            prints current time
-      -z, --timezone        appends the local time zone
-      -u, --updated         appends a string "Last updated: "
-      -c CUSTOM_TIME, --custom_time CUSTOM_TIME
+    -a AUTHOR, --author AUTHOR
+                        prints author name
+    -e AUTHOR_EMAIL, --author_email AUTHOR_EMAIL
+                        prints author name and link to email address
+    -d, --date            prints current date
+    -n, --datename        prints date with abbrv. day and month names
+    -t, --time            prints current time
+    -z, --timezone        appends the local time zone
+    -u, --updated         appends a string "Last updated: "
+    -c CUSTOM_TIME, --custom_time CUSTOM_TIME
                         prints a valid strftime() string
-      -v, --python          prints Python and IPython version
-      -p PACKAGES, --packages PACKAGES
+    -v, --python          prints Python and IPython version
+    -p PACKAGES, --packages PACKAGES
                         prints versions of specified Python modules and
                         packages
-      -m, --machine         prints system and machine info
-    
+    -h, --hostname        prints the host name
+    -m, --machine         prints system and machine info 
+
+
 Examples:
 
     %watermark -d -t
@@ -38,6 +44,7 @@ Examples:
 """
 import platform
 from time import strftime
+from socket import gethostname
 from pkg_resources import get_distribution
 from multiprocessing import cpu_count
 
@@ -62,6 +69,7 @@ class WaterMark(Magics):
     @argument('-c', '--custom_time', type=str, help='prints a valid strftime() string')
     @argument('-v', '--python', action='store_true', help='prints Python and IPython version')
     @argument('-p', '--packages', type=str, help='prints versions of specified Python modules and packages')
+    @argument('-h', '--hostname', action='store_true', help='prints the host name')
     @argument('-m', '--machine', action='store_true', help='prints system and machine info')
     @line_magic
     def watermark(self, line):
@@ -69,7 +77,7 @@ class WaterMark(Magics):
         IPython magic function to print date/time stamps 
         and various system information.
     
-        watermark version 1.0.2
+        watermark version 1.0.3
     
         """
         self.out = ''
@@ -101,6 +109,13 @@ class WaterMark(Magics):
                 self._get_packages(args.packages)
             if args.machine:
                 self._get_sysinfo()
+            if args.hostname:
+                space = ''
+                if args.machine:
+                    space = '  '
+                self.out += '\nhost name%s: %s' %(space, gethostname())
+
+
                 
         print(self.out)
 
