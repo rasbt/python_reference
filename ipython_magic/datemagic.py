@@ -1,3 +1,5 @@
+__version__ == '1.0.0'
+
 """ 
 IPython magic function for printing basic information, such as the current date, time,
 Python, and IPython version.
@@ -23,6 +25,7 @@ Usage:
 import platform
 from time import strftime
 from platform import python_version
+from pkg_resources import get_distribution
 
 import IPython
 from IPython.core.magic import Magics, magics_class, line_magic
@@ -37,10 +40,13 @@ class DateMagic(Magics):
     """
     @magic_arguments()
     @argument('-d', '--date', action='store_true', help='prints date (default)')
+    @argument('-dd', '--dateday', action='store_true', help='prints date with abbrv. day and month names')
     @argument('-t', '--time', action='store_true', help='print current time')
     @argument('-s', '--datetime', action='store_true', help='print current time')
-    @argument('-p', '--python', action='store_true', help='prints Python version')
+    @argument('-z', '--timezone', action='store_true', help='prints time zone')
+    @argument('-y', '--python', action='store_true', help='prints Python version')
     @argument('-i', '--ipython', action='store_true', help='prints IPython version')
+    @argument('-p', '--packages', action=str, help='prints versions of Python modules and packages')
     @line_magic
     def date(self, line):
         """ 
@@ -52,10 +58,16 @@ class DateMagic(Magics):
         out = ''
         if args.date:
             out += strftime('%d/%m/%Y')
+        elif arts.dateday:
+            out += strftime('%a %b %M %Y')
         if args.time:
             if out:
                 out += ' '
             out += strftime('%H:%M:%S')
+        if args.timezone:
+            if out:
+                out += ' '
+            out += strftime('%Z')
         if args.python:
             if out:
                 out += '\n'
@@ -64,6 +76,10 @@ class DateMagic(Magics):
             if out:
                 out += '\n'
             out += 'IPython %s' %IPython.__version__
+        if args.packages:
+            packages = args.packages.split(',') 
+            for p in packages:
+                out += '\n%s' %get_distribution(p).version
         if not out:
             out += strftime('%d/%m/%Y')
         print(out)
