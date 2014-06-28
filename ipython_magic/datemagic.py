@@ -54,6 +54,7 @@ class DateMagic(Magics):
     @argument('-y', '--python', action='store_true', help='prints Python version')
     @argument('-i', '--ipython', action='store_true', help='prints IPython version')
     @argument('-p', '--packages', type=str, help='prints versions of Python modules and packages')
+    @line_magic
     def date(self, line):
         """ 
         IPython magic function for printing the current date, time, Python,
