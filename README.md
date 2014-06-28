@@ -97,6 +97,8 @@ GitHub repository [One-Python-benchmark-per-day](https://github.com/rasbt/One-Py
 
 ###// Useful scripts and snippets
 
+- [IPython magic function %date](http://nbviewer.ipython.org/github/rasbt/python_reference/blob/master/ipython_magic/datemagic.ipynb) - for printing date stamps and/or the current Python/IPython version
+
 - [Shell script](./useful_scripts/prepend_python_shebang.sh) for prepending Python-shebangs to .py files.
 
 - convert 'tab-delimited' to 'comma-separated' CSV files [[IPython nb](http://nbviewer.ipython.org/github/rasbt/python_reference/blob/master/useful_scripts/fix_tab_csv.ipynb?create=1)]
