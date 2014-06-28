@@ -16,17 +16,23 @@ Usage:
     %load_ext datemagic
     
     
-    %date
+  %date [-d] [-dd] [-t] [-s] [-z] [-y] [-i] [-p PACKAGES]
+
+ 
+    IPython magic function for printing the current date, time, Python,
+    and IPython version.
 
     optional arguments:
-     -d, --date      prints date (default)
-     -t, --time      print current time
-     -s, --datetime  print current time
-     -p, --python    prints Python version
-     -i, --ipython   prints IPython version
+      -d, --date            prints date (default)
+      -dd, --dateday        prints date with abbrv. day and month names
+      -t, --time            print current time
+      -s, --datetime        print current time
+      -z, --timezone        prints time zone
+      -y, --python          prints Python version
+      -i, --ipython         prints IPython version
+      -p PACKAGES, --packages PACKAGES
+                        prints versions of Python modules and packages
     
-
-
 """
 
 import platform
@@ -65,7 +71,7 @@ class DateMagic(Magics):
         out = ''
         if args.date:
             out += strftime('%d/%m/%Y')
-        elif arts.dateday:
+        elif args.dateday:
             out += strftime('%a %b %M %Y')
         if args.time:
             if out:
