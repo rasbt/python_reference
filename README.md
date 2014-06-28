@@ -40,6 +40,7 @@
 
 - Entry point: Data - using sci-packages to prepare data for Machine Learning tasks and other data analyses [[IPython nb](http://nbviewer.ipython.org/github/rasbt/python_reference/blob/master/tutorials/python_data_entry_point.ipynb?create=1)]
 
+- Awesome things that you can do in IPython Notebooks (in progress) [[IPython nb](http://nbviewer.ipython.org/github/rasbt/python_reference/blob/master/tutorials/awesome_things_ipynb.ipynb)]
 
 <br>
 
