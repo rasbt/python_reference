@@ -1,11 +1,16 @@
-__version__ == '1.0.0'
-
 """ 
+Sebastian Raschka 2014
+
+datemagic.py
+version 1.0.0
+
+
 IPython magic function for printing basic information, such as the current date, time,
 Python, and IPython version.
 
 Installation: 
     %install_ext https://raw.githubusercontent.com/rasbt/python_reference/master/ipython_magic/datemagic.py
+
 
 Usage:
     %load_ext datemagic
@@ -20,6 +25,8 @@ Usage:
      -p, --python    prints Python version
      -i, --ipython   prints IPython version
     
+
+
 """
 
 import platform
