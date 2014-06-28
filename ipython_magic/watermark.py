@@ -2,7 +2,7 @@
 Sebastian Raschka 2014
 
 watermark.py
-version 1.0.1
+version 1.0.2
 
 
 IPython magic function to print date/time stamps and various system information.
@@ -53,6 +53,7 @@ class WaterMark(Magics):
 
     """
     @magic_arguments()
+    @argument('-a', '--author', type=str, help='prints author name')
     @argument('-d', '--date', action='store_true', help='prints current date')
     @argument('-n', '--datename', action='store_true', help='prints date with abbrv. day and month names')
     @argument('-t', '--time', action='store_true', help='prints current time')
@@ -68,7 +69,7 @@ class WaterMark(Magics):
         IPython magic function to print date/time stamps 
         and various system information.
     
-        watermark version 1.0.1
+        watermark version 1.0.2
     
         """
         self.out = ''
@@ -80,6 +81,8 @@ class WaterMark(Magics):
             self._get_sysinfo()  
             
         else:
+            if args.author:
+                self.out += '% s ' %args.author.strip('\'"') 
             if args.updated:
                 self.out += 'Last updated: '
             if args.custom_time:
