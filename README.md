@@ -97,7 +97,7 @@ GitHub repository [One-Python-benchmark-per-day](https://github.com/rasbt/One-Py
 
 ###// Useful scripts and snippets
 
-- [IPython magic function %date](http://nbviewer.ipython.org/github/rasbt/python_reference/blob/master/ipython_magic/datemagic.ipynb) - for printing date stamps and/or the current Python/IPython version
+- [IPython magic function %watermark](http://nbviewer.ipython.org/github/rasbt/python_reference/blob/master/ipython_magic/watermark.ipynb) - for printing date- and time-stamps and various system info
 
 - [Shell script](./useful_scripts/prepend_python_shebang.sh) for prepending Python-shebangs to .py files.
 
