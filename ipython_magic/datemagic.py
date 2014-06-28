@@ -36,66 +36,96 @@ Usage:
 """
 
 import platform
-from time import strftime
-from platform import python_version
 from pkg_resources import get_distribution
+from multiprocessing import cpu_count
 
 import IPython
 from IPython.core.magic import Magics, magics_class, line_magic
 from IPython.core.magic_arguments import argument, magic_arguments, parse_argstring
 
 @magics_class
-class DateMagic(Magics):
+class WaterMark(Magics):
     """ 
     IPython magic function for printing the current date, time, Python,
     and IPython version.
     
     """
     @magic_arguments()
-    @argument('-d', '--date', action='store_true', help='prints date (default)')
-    @argument('-dd', '--dateday', action='store_true', help='prints date with abbrv. day and month names')
-    @argument('-t', '--time', action='store_true', help='print current time')
-    @argument('-s', '--datetime', action='store_true', help='print current time')
-    @argument('-z', '--timezone', action='store_true', help='prints time zone')
-    @argument('-y', '--python', action='store_true', help='prints Python version')
-    @argument('-i', '--ipython', action='store_true', help='prints IPython version')
+    @argument('-d', '--date', action='store_true', help='prints current date')
+    @argument('-n', '--datename', action='store_true', help='prints date with abbrv. day and month names')
+    @argument('-t', '--datetime', action='store_true', help='prints currenttime')
+    @argument('-u', '--custom_time', type=str, help='prints a valid strftime() string')
+    @argument('-v', '--python', action='store_true', help='prints Python and IPython version')
     @argument('-p', '--packages', type=str, help='prints versions of Python modules and packages')
-    @line_magic
-    def date(self, line):
+    @argument('-m', '--machine', type='store_true', help='prints system and machine info')
+    def watermark(self, line):
         """ 
         IPython magic function for printing the current date, time, Python,
         and IPython version.
     
         """
         args = parse_argstring(self.date, line)
-        out = ''
-        if args.date:
-            out += strftime('%d/%m/%Y')
-        elif args.dateday:
-            out += strftime('%a %b %M %Y')
-        if args.time:
-            if out:
-                out += ' '
-            out += strftime('%H:%M:%S')
-        if args.timezone:
-            if out:
-                out += ' '
-            out += strftime('%Z')
-        if args.python:
-            if out:
-                out += '\n'
-            out += 'Python %s' %python_version()
-        if args.ipython:
-            if out:
-                out += '\n'
-            out += 'IPython %s' %IPython.__version__
-        if args.packages:
+
+
+        if not any(vars(args).values()):
+             print_customtime('%d/%m/%Y')
+             print_pyver(args)
+             print_sysinfo()
+
+
+        def print_customtime(self, ctime):
+            print(strftime(ctime))
+  
+        def print_pack(self):
+            out = ''
             packages = args.packages.split(',') 
             for p in packages:
                 out += '\n%s' %get_distribution(p).version
-        if not out:
-            out += strftime('%d/%m/%Y')
-        print(out)
+            print(out)
+            
+
+        def print_pyver(self, args):
+            out = ''
+            if args.python:
+                if out:
+                    out += '\n'
+                out += 'Python %s' %python_version()
+            if args.ipython:
+                if out:
+                    out += '\n'
+                out += 'IPython %s' %IPython.__version__
+            print(out)
+
+
+        def print_datetime(self, args):
+            out = ''
+            if args.date:
+                out += strftime('%d/%m/%Y')
+            elif args.dateday:
+                out += strftime('%a %b %M %Y')
+            if args.time:
+                if out:
+                    out += ' '
+                out += strftime('%H:%M:%S')
+            if args.timezone:
+                if out:
+                    out += ' '
+                out += strftime('%Z')
+            if args.custom_time:
+                if out:
+                    out += ' '
+                out += strftime(args.custom_time)
+            print(out)
+
+        def print_sysinfo(self):
+             print('compiler        : %s' %platform.python_compiler())
+             print('system     : %s' %platform.system())
+             print('release    : %s' %platform.release())
+             print('machine    : %s' %platform.machine())
+             print('processor  : %s' %platform.processor())
+             print('CPU count  : %s' %cpu_count())
+             print('interpreter: %s' %platform.architecture()[0])
+
 
 def load_ipython_extension(ipython):
     ipython.register_magics(DateMagic)
