@@ -2,39 +2,39 @@
 Sebastian Raschka 2014
 
 watermark.py
-version 1.0.3
+version 1.1.0
 
 
 IPython magic function to print date/time stamps and various system information.
 
 Installation: 
 
-    %install_ext https://raw.githubusercontent.com/rasbt/python_reference/master/ipython_magic/watermark.py
+  %install_ext https://raw.githubusercontent.com/rasbt/python_reference/master/ipython_magic/watermark.py
     
 Usage:
 
-    %load_ext watermark
+  %load_ext watermark
     
-    %watermark
+  %watermark
     
-    optional arguments:
-    -a AUTHOR, --author AUTHOR
+optional arguments:
+
+  -a AUTHOR, --author AUTHOR
                         prints author name
-    -e AUTHOR_EMAIL, --author_email AUTHOR_EMAIL
-                        prints author name and link to email address
-    -d, --date            prints current date
-    -n, --datename        prints date with abbrv. day and month names
-    -t, --time            prints current time
-    -z, --timezone        appends the local time zone
-    -u, --updated         appends a string "Last updated: "
-    -c CUSTOM_TIME, --custom_time CUSTOM_TIME
+  -d, --date            prints current date
+  -n, --datename        prints date with abbrv. day and month names
+  -t, --time            prints current time
+  -z, --timezone        appends the local time zone
+  -u, --updated         appends a string "Last updated: "
+  -c CUSTOM_TIME, --custom_time CUSTOM_TIME
                         prints a valid strftime() string
-    -v, --python          prints Python and IPython version
-    -p PACKAGES, --packages PACKAGES
+  -v, --python          prints Python and IPython version
+  -p PACKAGES, --packages PACKAGES
                         prints versions of specified Python modules and
                         packages
-    -h, --hostname        prints the host name
-    -m, --machine         prints system and machine info 
+  -h, --hostname        prints the host name
+  -m, --machine         prints system and machine info
+  -g, --githash         prints current Git commit hash
 
 
 Examples:
@@ -43,6 +43,7 @@ Examples:
     
 """
 import platform
+import subprocess
 from time import strftime
 from socket import gethostname
 from pkg_resources import get_distribution
@@ -71,13 +72,14 @@ class WaterMark(Magics):
     @argument('-p', '--packages', type=str, help='prints versions of specified Python modules and packages')
     @argument('-h', '--hostname', action='store_true', help='prints the host name')
     @argument('-m', '--machine', action='store_true', help='prints system and machine info')
+    @argument('-g', '--githash', action='store_true', help='prints current Git commit hash')
     @line_magic
     def watermark(self, line):
         """ 
         IPython magic function to print date/time stamps 
         and various system information.
     
-        watermark version 1.0.3
+        watermark version 1.1.0
     
         """
         self.out = ''
@@ -114,6 +116,9 @@ class WaterMark(Magics):
                 if args.machine:
                     space = '  '
                 self.out += '\nhost name%s: %s' %(space, gethostname())
+            if args.githash:
+                self._get_commit_hash(bool(args.machine))
+               
 
 
                 
@@ -152,6 +157,15 @@ class WaterMark(Magics):
         cpu_count(),
         platform.architecture()[0]
         )
+
+
+    def _get_commit_hash(self, machine):
+        process = subprocess.Popen(['git', 'rev-parse', 'HEAD'], shell=False, stdout=subprocess.PIPE)
+        git_head_hash = process.communicate()[0].strip()
+        space = ''
+        if machine:
+            space = '   '
+        self.out += '\nGit hash%s: %s' %(space, git_head_hash.decode("utf-8")) 
 
 
 def load_ipython_extension(ipython):
