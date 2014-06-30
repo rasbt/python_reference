@@ -150,3 +150,5 @@ GitHub repository [One-Python-benchmark-per-day](https://github.com/rasbt/One-Py
 - [Cython](http://cython.org) - C-extensions for Python, an optimizing static compiler to combine Python and C code
 
 - [Numba](http://numba.pydata.org) - an just-in-time specializing compiler which compiles annotated Python and NumPy code to LLVM (through decorators)
+
+- [scikit-learn](http://scikit-learn.org/stable/) - a powerful machine learning library for Python and tools for efficient data mining and analysis
