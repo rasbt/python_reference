@@ -92,6 +92,7 @@ GitHub repository [One-Python-benchmark-per-day](https://github.com/rasbt/One-Py
 
 - Numeric matrix manipulation - The cheat sheet for MATLAB, Python NumPy, R, and Julia [[Markdown](./tutorials/matrix_cheatsheet.md)]
 
+- [Python Book Reviews](./other/python_book_reviews.md)
 
 <br>
 
