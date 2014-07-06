@@ -3,10 +3,10 @@
 
 # Python Book Reviews
 
-- [Matplotlib Plotting Cookbook](#Matplotlib-Plotting-Cookbook)
-- [Python High Performance Programming](#Python-High-Performance-Programming)
-- [Learning Ipython for Interactive Computing and Data Visualization](#Learning-Ipython-for-Interactive-Computing-and-Data-Visualization)
-- [The Practice of Computing Using Python (2nd Edition)](#The-Practice-of-Computing-Using-Python-(2nd-Edition))
+- [Matplotlib Plotting Cookbook](https://github.com/rasbt/python_reference/blob/master/other/python_book_reviews.md#Matplotlib-Plotting-Cookbook)
+- [Python High Performance Programming](https://github.com/rasbt/python_reference/blob/master/other/python_book_reviews.md#Python-High-Performance-Programming)
+- [Learning Ipython for Interactive Computing and Data Visualization](https://github.com/rasbt/python_reference/blob/master/other/python_book_reviews.md#Learning-Ipython-for-Interactive-Computing-and-Data-Visualization)
+- [The Practice of Computing Using Python (2nd Edition)](https://github.com/rasbt/python_reference/blob/master/other/python_book_reviews.md#The-Practice-of-Computing-Using-Python-(2nd-Edition))
 
 
 <div style="height:50px;"></div>
@@ -29,7 +29,7 @@ I have to admit that I am not a big fan of those review scores - and you won't f
 
 <a id="Matplotlib-Plotting-Cookbook"></a>
 ### Matplotlib Plotting Cookbook 
-[[back to top](#table-of-contents)]
+[[back to top](https://github.com/rasbt/python_reference/blob/master/other/python_book_reviews.md#python-book-reviews)]
 ***by Alexandre Devert***
 
 <font size='0.7em'>
