@@ -25,7 +25,7 @@
 
 - Key differences between Python 2.x and Python 3.x [[IPython nb](http://nbviewer.ipython.org/github/rasbt/python_reference/blob/master/tutorials/key_differences_between_python_2_and_3.ipynb?create=1)]
 
-- A thorough guide to SQLite database operations in Python [[Markdown](./sqlite3_howto/README.md)]  
+- A thorough guide to SQLite database operations in Python [[Markdown](./tutorials/sqlite3_howto/README.md)]  
 
 - Unit testing in Python - Why we want to make it a habit [[Markdown](./tutorials/unit_testing.md)]  
 
@@ -69,28 +69,38 @@
 
 - Sequential Selection Algorithms [[IPython nb](http://nbviewer.ipython.org/github/rasbt/python_reference/blob/master/tutorials/sorting_csvs.ipynb)]
 
+- Counting points inside a hypercube [[IPython nb](http://nbviewer.ipython.org/github/rasbt/algorithms_in_ipython_notebooks/blob/master/ipython_nbs/geometry/points_in_hybercube.ipynb)]
 
 
 <br>
 ###// Benchmarks
 
-*For more recent benchmarks, please also see my separate   
-GitHub repository [One-Python-benchmark-per-day](https://github.com/rasbt/One-Python-benchmark-per-day)*
+*The benchmark category was moved to a separate GitHub repository [One-Python-benchmark-per-day](https://github.com/rasbt/One-Python-benchmark-per-day)*
 
-- Python benchmarks via `timeit` [[IPython nb](http://nbviewer.ipython.org/github/rasbt/python_reference/blob/master/benchmarks/timeit_tests.ipynb?create=1)]  
-
-- Least squares fit method for linear regression sped up via Cython [[IPython nb](http://nbviewer.ipython.org/github/rasbt/python_reference/blob/master/benchmarks/cython_least_squares.ipynb?create=1)]   
-
-- Benchmarks of different palindrome functions [[IPython nb](http://nbviewer.ipython.org/github/rasbt/python_reference/blob/master/benchmarks/palindrome_timeit.ipynb?create=1)]    
-
-
-<br>
-
+- **1** - Reversing strings [[IPython nb](http://nbviewer.ipython.org/github/rasbt/One-Python-benchmark-per-day/blob/master/ipython_nbs/day1_string_reverse.ipynb)]
+- **2** - Calculating sample means [[IPython nb](http://nbviewer.ipython.org/github/rasbt/One-Python-benchmark-per-day/blob/master/ipython_nbs/day2_mean_values.ipynb)]
+- **3** - 6 different ways to count elements using a dict [[IPython nb](http://nbviewer.ipython.org/github/rasbt/One-Python-benchmark-per-day/blob/master/ipython_nbs/day3_dictionary_counting.ipynb)]
+- **4** - Python vs. Cython vs. Numba [[IPython nb](http://nbviewer.ipython.org/github/rasbt/One-Python-benchmark-per-day/blob/master/ipython_nbs/day4_python_cython_numba.ipynb)]
+- **4.2** - (C)Python compilers - Cython vs. Numba vs. Parakeet [[IPython nb](http://nbviewer.ipython.org/github/rasbt/One-Python-benchmark-per-day/blob/master/ipython_nbs/day4_2_cython_numba_parakeet.ipynb)]
+- **5** - Comparing 9 ways for flattening lists of sublists [[IPython nb](http://nbviewer.ipython.org/github/rasbt/One-Python-benchmark-per-day/blob/master/ipython_nbs/day5_flattening_lists.ipynb)]
+- **6** - Determining if a string is a number [[IPython nb](http://nbviewer.ipython.org/github/rasbt/One-Python-benchmark-per-day/blob/master/ipython_nbs/day6_string_is_number.ipynb)]
+- **7** - Speeding up NumPy array expressions with Numexpr [[IPython nb](http://nbviewer.ipython.org/github/rasbt/One-Python-benchmark-per-day/blob/master/ipython_nbs/day7_numpy_numexpr.ipynb)]
+- **7.2** - Just-in-time compilers for NumPy array expressions [[IPython nb](http://nbviewer.ipython.org/github/rasbt/One-Python-benchmark-per-day/blob/master/ipython_nbs/day7_2_jit_numpy.ipynb)] 
+- **8** - Calculating square roots and exponents [[IPython nb](http://nbviewer.ipython.org/github/rasbt/One-Python-benchmark-per-day/blob/master/ipython_nbs/day8_sqrt_and_exp.ipynb)] 
+- **9** - The most Pythonic way to check if a string ends with a particular substring [[IPython nb](http://nbviewer.ipython.org/github/rasbt/One-Python-benchmark-per-day/blob/master/ipython_nbs/day9_string_endswith.ipynb)]
+- **10** - Cython - Bridging the gap between Python and Fortran [[IPython nb](http://nbviewer.ipython.org/github/rasbt/One-Python-benchmark-per-day/blob/master/ipython_nbs/day10_fortran_lstsqr.ipynb)]
+- **11** - The `deque` container data type [[IPython nb](http://nbviewer.ipython.org/github/rasbt/One-Python-benchmark-per-day/blob/master/ipython_nbs/day11_deque_container.ipynb)]
+- **12** - Lightning fast insertion into sorted lists via the `bisect` module [[IPython nb](http://nbviewer.ipython.org/github/rasbt/One-Python-benchmark-per-day/blob/master/ipython_nbs/day12_insert_into_sorted_list.ipynb)]
+- **13** - Parallel processing via the multiprocessing module [[IPython nb](http://nbviewer.ipython.org/github/rasbt/python_reference/blob/master/tutorials/multiprocessing_intro.ipynb)]
+- **14** - Python's and NumPy's in-place operator functions [[IPython nb](http://nbviewer.ipython.org/github/rasbt/One-Python-benchmark-per-day/blob/master/ipython_nbs/day14_inplace_operators.ipynb)]
+- **15** - Array indexing in NumPy: Extracting rows and columns [[IPython nb](http://nbviewer.ipython.org/github/rasbt/One-Python-benchmark-per-day/blob/master/ipython_nbs/day15_array_indexing_numpy.ipynb)] 
+- **16** - Vectorizing a classic for-loop in NumPy [[IPython nb](http://nbviewer.ipython.org/github/rasbt/One-Python-benchmark-per-day/blob/master/ipython_nbs/day16_numpy_vectorization.ipynb)]
+- **17** - Stacking NumPy arrays [[IPython nb](http://nbviewer.ipython.org/github/rasbt/One-Python-benchmark-per-day/blob/master/ipython_nbs/day17_numpy_stacking.ipynb)]
 
 
 ###// Other 
 
-- Happy Mother's Day [[IPython nb](http://nbviewer.ipython.org/github/rasbt/python_reference/blob/master/other/happy_mothers_day.ipynb?create=1)]
+- Happy Mother's [[IPython nb](http://nbviewer.ipython.org/github/rasbt/python_reference/blob/master/other/happy_mothers_day.ipynb?create=1)]
 
 - Numeric matrix manipulation - The cheat sheet for MATLAB, Python NumPy, R, and Julia [[Markdown](./tutorials/matrix_cheatsheet.md)]
 
