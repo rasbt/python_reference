@@ -42,6 +42,8 @@
 
 - Awesome things that you can do in IPython Notebooks (in progress) [[IPython nb](http://nbviewer.ipython.org/github/rasbt/python_reference/blob/master/tutorials/awesome_things_ipynb.ipynb)]
 
+- A collection of useful regular expressions [[IPython nb](http://nbviewer.ipython.org/github/rasbt/python_reference/blob/master/tutorials/useful_regex.ipynb)]
+
 <br>
 
 
@@ -92,7 +94,7 @@ GitHub repository [One-Python-benchmark-per-day](https://github.com/rasbt/One-Py
 
 - Numeric matrix manipulation - The cheat sheet for MATLAB, Python NumPy, R, and Julia [[Markdown](./tutorials/matrix_cheatsheet.md)]
 
-- [Python Book Reviews](./other/python_book_reviews.md)
+- Python Book Reviews [[Markdown](./other/python_book_reviews.md)]
 
 <br>
 
