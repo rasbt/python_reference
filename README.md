@@ -1,23 +1,26 @@
-
-<div align="center">
-
-<h3>A collection of useful scripts, tutorials, and other Python-related things</h3>
+### A collection of useful scripts, tutorials, and other Python-related things
 
 <br>
-<img src="./Images/python-logo-master-v3-TM-flattened.png" alt=""> </div>
+<img src="./Images/python-logo-master-v3-TM-flattened.png" alt="">
+
+
+<div style="height:100px;"></div>
+
+- [// Python tips and tutorials](#-python-tips-and-tutorials)
+- [// Python and the web](#-python-and-the-web)
+- [// Algorithms](#-algorithms)
+- [// Benchmarks](#-benchmarks)
+- [// Other](#-other)
+- [// Useful scripts and snippets](#-useful-scripts-and-snippets)
+- [// Links](#-links)
 
 
 
-<br>
-
-
-<br>
-<br>
-<br>
-
+<div style="height:100px;"></div>
 
 
 ###// Python tips and tutorials
+[[back to top](#a-collection-of-useful-scripts-tutorials-and-other-python-related-things)]
 
 - A collection of not so obvious Python stuff you should know! [[IPython nb](http://nbviewer.ipython.org/github/rasbt/python_reference/blob/master/tutorials/not_so_obvious_python_stuff.ipynb?create=1)]
 
@@ -48,6 +51,7 @@
 
 
 ###// Python and the web
+[[back to top](#a-collection-of-useful-scripts-tutorials-and-other-python-related-things)]
 
 - Creating internal links in IPython Notebooks and Markdown docs [[IPython nb](http://nbviewer.ipython.org/github/rasbt/python_reference/blob/master/tutorials/table_of_contents_ipython.ipynb)]  
 
@@ -56,6 +60,7 @@
 
 <br>
 ###// Algorithms
+[[back to top](#a-collection-of-useful-scripts-tutorials-and-other-python-related-things)]
 
 *The algorithms category was moved to a separate GitHub repository [rasbt/algorithms_in_ipython_notebooks](https://github.com/rasbt/algorithms_in_ipython_notebooks)*
 
@@ -74,6 +79,7 @@
 
 <br>
 ###// Benchmarks
+[[back to top](#a-collection-of-useful-scripts-tutorials-and-other-python-related-things)]
 
 *The benchmark category was moved to a separate GitHub repository [One-Python-benchmark-per-day](https://github.com/rasbt/One-Python-benchmark-per-day)*
 
@@ -99,6 +105,7 @@
 
 
 ###// Other 
+[[back to top](#a-collection-of-useful-scripts-tutorials-and-other-python-related-things)]
 
 - Happy Mother's [[IPython nb](http://nbviewer.ipython.org/github/rasbt/python_reference/blob/master/other/happy_mothers_day.ipynb?create=1)]
 
@@ -109,6 +116,7 @@
 <br>
 
 ###// Useful scripts and snippets
+[[back to top](#a-collection-of-useful-scripts-tutorials-and-other-python-related-things)]
 
 - [IPython magic function %watermark](http://nbviewer.ipython.org/github/rasbt/python_reference/blob/master/ipython_magic/watermark.ipynb) - for printing date- and time-stamps and various system info
 
@@ -122,9 +130,9 @@
 
 <br>
 
-<a id='links'></a>
 
 ###// Links
+[[back to top](#a-collection-of-useful-scripts-tutorials-and-other-python-related-things)]
 
 
 
