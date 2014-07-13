@@ -150,8 +150,6 @@
 
 - [Python Weekly](http://www.pythonweekly.com) - A free weekly newsletter featuring curated news, articles, new releases, jobs etc. related to Python
 
-
-
 **// Resources for learning Python**
 
 - [Learn Python The Hard Way](http://learnpythonthehardway.org/book/) - one of the most popular and recommended resources for learning Python  
@@ -161,6 +159,8 @@
 - [The Hitchhiker’s Guide to Python](http://docs.python-guide.org/en/latest/) - a free best-practice handbook for both novices and experts
 
 - [Think Python - How to Think Like a Computer Scientist](http://www.greenteapress.com/thinkpython/) - an introduction for beginners starting with basic concepts of programming
+
+- [Real Python](http://www.realpython.com/) - learn Python programming and web development with Python through hands-on, interesting examples that are useful and fun!
 
 **// My favorite Python projects and packages**
 
