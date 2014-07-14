@@ -166,10 +166,20 @@
 
 - [The IPython Notebook](http://ipython.org/notebook.html) - an interactive computational environment for combining code execution, documentation (with Markdown and LateX support), inline plots, and rich media all in one document.
 
-- [SciPy Stack](http://www.scipy.org/index.html) - Python packages (NumPy, pandas, SciPy, IPython, Matplotlib) for scientific computing
+- [matplotlib](http://matplotlib.org) - Python's favorite plotting library
+
+- [NumPy](http://www.numpy.org) - a library for multi-dimensional arrays and matrices, along with a large library of high-level mathematical functions to operate on these arrays
+
+- [SciPy](http://www.scipy.org) - a library that provides various useful functions for numerical computing, such as modules for optimization, linear algebra, integration, interpolation, ...
+
+
+- [pandas](http://pandas.pydata.org) - high-performance, easy-to-use data structures and data analysis tools build on top of Numpy
 
 - [Cython](http://cython.org) - C-extensions for Python, an optimizing static compiler to combine Python and C code
 
 - [Numba](http://numba.pydata.org) - an just-in-time specializing compiler which compiles annotated Python and NumPy code to LLVM (through decorators)
 
 - [scikit-learn](http://scikit-learn.org/stable/) - a powerful machine learning library for Python and tools for efficient data mining and analysis
+
+
+
