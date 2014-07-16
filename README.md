@@ -9,6 +9,7 @@
 - [// Python tips and tutorials](#-python-tips-and-tutorials)
 - [// Python and the web](#-python-and-the-web)
 - [// Algorithms](#-algorithms)
+- [// Plotting and Visualization](#-plotting-and-visualization)
 - [// Benchmarks](#-benchmarks)
 - [// Other](#-other)
 - [// Useful scripts and snippets](#-useful-scripts-and-snippets)
@@ -75,6 +76,12 @@
 - Sequential Selection Algorithms [[IPython nb](http://nbviewer.ipython.org/github/rasbt/python_reference/blob/master/tutorials/sorting_csvs.ipynb)]
 
 - Counting points inside a hypercube [[IPython nb](http://nbviewer.ipython.org/github/rasbt/algorithms_in_ipython_notebooks/blob/master/ipython_nbs/geometry/points_in_hybercube.ipynb)]
+
+<br>
+###// Plotting and Visualization
+[[back to top](#a-collection-of-useful-scripts-tutorials-and-other-python-related-things)]
+
+- a matplotlib gallery in IPython notebooks [[GitHub repo](https://github.com/rasbt/matplotlib-gallery)]
 
 
 <br>
