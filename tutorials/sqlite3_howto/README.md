@@ -29,7 +29,7 @@ _\-- written by Sebastian Raschka_ on March 7, 2014
 • Conclusion  
 
 The complete Python code that I am using in this tutorial can be downloaded
-from my GitHub repository: [https://github.com/rasbt/python_reference/tutorials/sqlite3_howto](https://github.com/rasbt/python_reference/tutorials/sqlite3_howto)  
+from my GitHub repository: [https://github.com/rasbt/python_reference/tree/master/tutorials/sqlite3_howto](https://github.com/rasbt/python_reference/tree/master/tutorials/sqlite3_howto)  
   
 
 * * *
@@ -97,7 +97,7 @@ there is more information about PRIMARY KEYs further down in this section).
 
     
     
-    mport sqlite3
+    import sqlite3
     
     sqlite_file = 'my_first_db.sqlite'    # name of the sqlite database file
     table_name1 = 'my_table_1'  # name of the table to be created
