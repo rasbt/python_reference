@@ -169,6 +169,22 @@
 
 - [Think Python - How to Think Like a Computer Scientist](http://www.greenteapress.com/thinkpython/) - an introduction for beginners starting with basic concepts of programming
 
+- [Hacking Secret Ciphers with Python](http://inventwithpython.com/hackingciphers.pdf) - A Beginner's Guide to Cryptography and Computer Programming with Python Paperback – Apr 14 2013
+  [Source codes](http://inventwithpython.com/hackingciphers_src.zip)
+  [Amazon Link to Buy](http://www.amazon.com/gp/product/1482614375/ref=as_li_qf_sp_asin_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=1482614375&linkCode=as2&tag=playwithpyth-20)
+
+- [Invent Your Own Computer Games with Python](http://inventwithpython.com/IYOCGwP_book1.pdf) - teaches you how to program in the Python programming language. Each chapter gives you the complete source code for a new game, and then teaches the programming concepts from the example.  
+  [Source codes](http://inventwithpython.com/inventwithpython_src.zip)
+  [Amazon Link to Buy](http://www.amazon.com/gp/product/0982106017?ie=UTF8&tag=playwithpyth-20&linkCode=as2&camp=1789&creative=9325&creativeASIN=0982106017)
+
+- [Making Games with Python & Pygame](http://inventwithpython.com/makinggames.pdf) - covers the Pygame library with the source code for 11 games. “Making Games” was written as a sequel for the same age range as “Invent with Python”. Once you have an understanding of the basics of Python programming, you can now expand your abilities using the Pygame library to make games with graphics, animation, and sound.
+  [Source codes](http://inventwithpython.com/makinggames_src.zip)
+  [Amazon Link to Buy](http://www.amazon.com/Making-Games-Python-Pygame-Sweigart/dp/1469901730?ie=UTF8&tag=playwithpyth-20&linkCode=as2&camp=1789&creative=9325&creativeASIN=0982106017)
+
+The last three books have been available freely by [inventwithpython.com](http://inventwithpython.com/)
+
+
+
 **// My favorite Python projects and packages**
 
 - [The IPython Notebook](http://ipython.org/notebook.html) - an interactive computational environment for combining code execution, documentation (with Markdown and LateX support), inline plots, and rich media all in one document.
@@ -188,5 +204,5 @@
 
 - [scikit-learn](http://scikit-learn.org/stable/) - a powerful machine learning library for Python and tools for efficient data mining and analysis
 
-
+- [Requests: HTTP for Humans](http://docs.python-requests.org/en/latest/) - Requests takes all of the work out of Python HTTP/1.1 — making your integration with web services seamless. There’s no need to manually add query strings to your URLs, or to form-encode your POST data. Keep-alive and HTTP connection pooling are 100% automatic, powered by urllib3, which is embedded within Requests.
 
