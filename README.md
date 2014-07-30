@@ -125,7 +125,7 @@
 ###// Useful scripts and snippets
 [[back to top](#a-collection-of-useful-scripts-tutorials-and-other-python-related-things)]
 
-- [IPython magic function %watermark](http://nbviewer.ipython.org/github/rasbt/python_reference/blob/master/ipython_magic/watermark.ipynb) - for printing date- and time-stamps and various system info
+- [watermark](https://github.com/rasbt/watermark) - An IPython magic extension for printing date and time stamps, version numbers, and hardware information.
 
 - [Shell script](./useful_scripts/prepend_python_shebang.sh) for prepending Python-shebangs to .py files.
 
