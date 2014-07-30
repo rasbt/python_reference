@@ -48,6 +48,8 @@
 
 - A collection of useful regular expressions [[IPython nb](http://nbviewer.ipython.org/github/rasbt/python_reference/blob/master/tutorials/useful_regex.ipynb)]
 
+- Quick guide for dealing with missing numbers in NumPy [[IPython nb](http://nbviewer.ipython.org/github/rasbt/python_reference/blob/master/tutorials/numpy_nan_quickguide.ipynb)]
+
 <br>
 
 
