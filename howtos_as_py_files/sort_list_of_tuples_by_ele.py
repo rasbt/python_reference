@@ -1,5 +1,5 @@
 # Sebastian Raschka 09/02/2014
-# Sorting a list of tuples by the last last elements of the tuple
+# Sorting a list of tuples by the last elements of the tuple
 
 
 # Here, we make use of the "key" parameter of the in-built "sorted()" function 
