@@ -65,7 +65,7 @@
 ###// Algorithms
 [[back to top](#a-collection-of-useful-scripts-tutorials-and-other-python-related-things)]
 
-*The algorithms category was moved to a separate GitHub repository [rasbt/algorithms_in_ipython_notebooks](https://github.com/rasbt/algorithms_in_ipython_notebooks)*
+*The algorithms category has been moved to a separate GitHub repository [rasbt/algorithms_in_ipython_notebooks](https://github.com/rasbt/algorithms_in_ipython_notebooks)*
 
 
 
@@ -83,44 +83,60 @@
 ###// Plotting and Visualization
 [[back to top](#a-collection-of-useful-scripts-tutorials-and-other-python-related-things)]
 
-- a matplotlib gallery in IPython notebooks [[GitHub repo](https://github.com/rasbt/matplotlib-gallery)]
+*The matplotlib-gallery in IPython notebooks has been moved to a separate GitHub repository [matplotlib-gallery](https://github.com/rasbt/matplotlib-gallery)*
+
+**Featured articles**:  
+
+- Preparing Plots for Publication [[IPython nb](http://nbviewer.ipython.org/github/rasbt/matplotlib-gallery/blob/master/ipynb/publication.ipynb)]
 
 
 <br>
 ###// Benchmarks
 [[back to top](#a-collection-of-useful-scripts-tutorials-and-other-python-related-things)]
 
-*The benchmark category was moved to a separate GitHub repository [One-Python-benchmark-per-day](https://github.com/rasbt/One-Python-benchmark-per-day)*
+*The benchmark category has been moved to a separate GitHub repository [One-Python-benchmark-per-day](https://github.com/rasbt/One-Python-benchmark-per-day)*
 
-- **1** - Reversing strings [[IPython nb](http://nbviewer.ipython.org/github/rasbt/One-Python-benchmark-per-day/blob/master/ipython_nbs/day1_string_reverse.ipynb)]
-- **2** - Calculating sample means [[IPython nb](http://nbviewer.ipython.org/github/rasbt/One-Python-benchmark-per-day/blob/master/ipython_nbs/day2_mean_values.ipynb)]
-- **3** - 6 different ways to count elements using a dict [[IPython nb](http://nbviewer.ipython.org/github/rasbt/One-Python-benchmark-per-day/blob/master/ipython_nbs/day3_dictionary_counting.ipynb)]
-- **4** - Python vs. Cython vs. Numba [[IPython nb](http://nbviewer.ipython.org/github/rasbt/One-Python-benchmark-per-day/blob/master/ipython_nbs/day4_python_cython_numba.ipynb)]
-- **4.2** - (C)Python compilers - Cython vs. Numba vs. Parakeet [[IPython nb](http://nbviewer.ipython.org/github/rasbt/One-Python-benchmark-per-day/blob/master/ipython_nbs/day4_2_cython_numba_parakeet.ipynb)]
-- **5** - Comparing 9 ways for flattening lists of sublists [[IPython nb](http://nbviewer.ipython.org/github/rasbt/One-Python-benchmark-per-day/blob/master/ipython_nbs/day5_flattening_lists.ipynb)]
-- **6** - Determining if a string is a number [[IPython nb](http://nbviewer.ipython.org/github/rasbt/One-Python-benchmark-per-day/blob/master/ipython_nbs/day6_string_is_number.ipynb)]
-- **7** - Speeding up NumPy array expressions with Numexpr [[IPython nb](http://nbviewer.ipython.org/github/rasbt/One-Python-benchmark-per-day/blob/master/ipython_nbs/day7_numpy_numexpr.ipynb)]
-- **7.2** - Just-in-time compilers for NumPy array expressions [[IPython nb](http://nbviewer.ipython.org/github/rasbt/One-Python-benchmark-per-day/blob/master/ipython_nbs/day7_2_jit_numpy.ipynb)] 
-- **8** - Calculating square roots and exponents [[IPython nb](http://nbviewer.ipython.org/github/rasbt/One-Python-benchmark-per-day/blob/master/ipython_nbs/day8_sqrt_and_exp.ipynb)] 
-- **9** - The most Pythonic way to check if a string ends with a particular substring [[IPython nb](http://nbviewer.ipython.org/github/rasbt/One-Python-benchmark-per-day/blob/master/ipython_nbs/day9_string_endswith.ipynb)]
-- **10** - Cython - Bridging the gap between Python and Fortran [[IPython nb](http://nbviewer.ipython.org/github/rasbt/One-Python-benchmark-per-day/blob/master/ipython_nbs/day10_fortran_lstsqr.ipynb)]
-- **11** - The `deque` container data type [[IPython nb](http://nbviewer.ipython.org/github/rasbt/One-Python-benchmark-per-day/blob/master/ipython_nbs/day11_deque_container.ipynb)]
-- **12** - Lightning fast insertion into sorted lists via the `bisect` module [[IPython nb](http://nbviewer.ipython.org/github/rasbt/One-Python-benchmark-per-day/blob/master/ipython_nbs/day12_insert_into_sorted_list.ipynb)]
-- **13** - Parallel processing via the multiprocessing module [[IPython nb](http://nbviewer.ipython.org/github/rasbt/python_reference/blob/master/tutorials/multiprocessing_intro.ipynb)]
-- **14** - Python's and NumPy's in-place operator functions [[IPython nb](http://nbviewer.ipython.org/github/rasbt/One-Python-benchmark-per-day/blob/master/ipython_nbs/day14_inplace_operators.ipynb)]
-- **15** - Array indexing in NumPy: Extracting rows and columns [[IPython nb](http://nbviewer.ipython.org/github/rasbt/One-Python-benchmark-per-day/blob/master/ipython_nbs/day15_array_indexing_numpy.ipynb)] 
-- **16** - Vectorizing a classic for-loop in NumPy [[IPython nb](http://nbviewer.ipython.org/github/rasbt/One-Python-benchmark-per-day/blob/master/ipython_nbs/day16_numpy_vectorization.ipynb)]
-- **17** - Stacking NumPy arrays [[IPython nb](http://nbviewer.ipython.org/github/rasbt/One-Python-benchmark-per-day/blob/master/ipython_nbs/day17_numpy_stacking.ipynb)]
+**Featured articles**:  
+
+- (C)Python compilers - Cython vs. Numba vs. Parakeet [[IPython nb](http://nbviewer.ipython.org/github/rasbt/One-Python-benchmark-per-day/blob/master/ipython_nbs/day4_2_cython_numba_parakeet.ipynb)]
+- Just-in-time compilers for NumPy array expressions [[IPython nb](http://nbviewer.ipython.org/github/rasbt/One-Python-benchmark-per-day/blob/master/ipython_nbs/day7_2_jit_numpy.ipynb)]
+- Cython - Bridging the gap between Python and Fortran [[IPython nb](http://nbviewer.ipython.org/github/rasbt/One-Python-benchmark-per-day/blob/master/ipython_nbs/day10_fortran_lstsqr.ipynb)]
+- Parallel processing via the multiprocessing module [[IPython nb](http://nbviewer.ipython.org/github/rasbt/python_reference/blob/master/tutorials/multiprocessing_intro.ipynb)]
+- Vectorizing a classic for-loop in NumPy [[IPython nb](http://nbviewer.ipython.org/github/rasbt/One-Python-benchmark-per-day/blob/master/ipython_nbs/day16_numpy_vectorization.ipynb)]
+
+<br> 
 
 
-###// Other 
+<br>
+###// Benchmarks
 [[back to top](#a-collection-of-useful-scripts-tutorials-and-other-python-related-things)]
 
-- Happy Mother's [[IPython nb](http://nbviewer.ipython.org/github/rasbt/python_reference/blob/master/other/happy_mothers_day.ipynb?create=1)]
+*The benchmark category has been moved to a separate GitHub repository [One-Python-benchmark-per-day](https://github.com/rasbt/One-Python-benchmark-per-day)*
 
-- Numeric matrix manipulation - The cheat sheet for MATLAB, Python NumPy, R, and Julia [[Markdown](./tutorials/matrix_cheatsheet.md)]
+**Featured articles**:  
 
-- Python Book Reviews [[Markdown](./other/python_book_reviews.md)]
+- (C)Python compilers - Cython vs. Numba vs. Parakeet [[IPython nb](http://nbviewer.ipython.org/github/rasbt/One-Python-benchmark-per-day/blob/master/ipython_nbs/day4_2_cython_numba_parakeet.ipynb)]
+- Just-in-time compilers for NumPy array expressions [[IPython nb](http://nbviewer.ipython.org/github/rasbt/One-Python-benchmark-per-day/blob/master/ipython_nbs/day7_2_jit_numpy.ipynb)]
+- Cython - Bridging the gap between Python and Fortran [[IPython nb](http://nbviewer.ipython.org/github/rasbt/One-Python-benchmark-per-day/blob/master/ipython_nbs/day10_fortran_lstsqr.ipynb)]
+- Parallel processing via the multiprocessing module [[IPython nb](http://nbviewer.ipython.org/github/rasbt/python_reference/blob/master/tutorials/multiprocessing_intro.ipynb)]
+- Vectorizing a classic for-loop in NumPy [[IPython nb](http://nbviewer.ipython.org/github/rasbt/One-Python-benchmark-per-day/blob/master/ipython_nbs/day16_numpy_vectorization.ipynb)]
+
+<br> 
+
+
+###// Python and "Data Science" 
+[[back to top](#a-collection-of-useful-scripts-tutorials-and-other-python-related-things)]
+
+*The "data science"-related posts have been moved to a separate GitHub repository [pattern_classification](https://github.com/rasbt/pattern_classification)*
+
+**Featured articles**:  
+
+- Entry Point: Data - Using Python's sci-packages to prepare data for Machine Learning tasks and other data analyses [[IPython nb](http://nbviewer.ipython.org/github/rasbt/python_reference/blob/master/tutorials/python_data_entry_point.ipynb)]
+- About Feature Scaling: Standardization and Min-Max-Scaling (Normalization) [[IPython nb](http://nbviewer.ipython.org/github/rasbt/pattern_classification/blob/master/preprocessing/about_standardization_normalization.ipynb)]
+- Principal Component Analysis (PCA) [[IPython nb](http://nbviewer.ipython.org/github/rasbt/pattern_classification/blob/master/dimensionality_reduction/projection/principal_component_analysis.ipynb)]
+- Linear Discriminant Analysis (LDA) [[IPython nb](http://nbviewer.ipython.org/github/rasbt/pattern_classification/blob/master/dimensionality_reduction/projection/linear_discriminant_analysis.ipynb)]
+- Kernel density estimation via the Parzen-window technique [[IPython nb](http://nbviewer.ipython.org/github/rasbt/pattern_classification/blob/master/parameter_estimation_techniques/parzen_window_technique.ipynb)]
+
 
 <br>
 
@@ -131,7 +147,7 @@
 
 - [Shell script](./useful_scripts/prepend_python_shebang.sh) for prepending Python-shebangs to .py files.
 
-- convert 'tab-delimited' to 'comma-separated' CSV files [[IPython nb](http://nbviewer.ipython.org/github/rasbt/python_reference/blob/master/useful_scripts/fix_tab_csv.ipynb?create=1)]
+- convert 'tab-delimited' to 'comma-separated' CSV files [[IPython nb](http://nbviewer.ipython.org/github/rasbt/python_reference/blob/master/useful_scripts/fix_tab_csv.ipynb)]
 
 - A random string generator [function](./useful_scripts/random_string_generator.py)
 
