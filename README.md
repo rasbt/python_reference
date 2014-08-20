@@ -184,7 +184,7 @@
 
 - [Think Python - How to Think Like a Computer Scientist](http://www.greenteapress.com/thinkpython/) - An introduction for beginners starting with basic concepts of programming.
 
-- [Python Patterns](http://matthiaseisen.com/pp/topics/t003/) -  A directory of proven, reusable solutions to common programming problems.
+- [Python Patterns](http://matthiaseisen.com/pp/) -  A directory of proven, reusable solutions to common programming problems.
 
 <br>
 
