@@ -140,9 +140,9 @@
 
 - [watermark](https://github.com/rasbt/watermark) - An IPython magic extension for printing date and time stamps, version numbers, and hardware information.
 
-- [Shell script](./useful_scripts/prepend_python_shebang.sh) for prepending Python-shebangs to .py files.
+- [Shell script](./useful_scripts/prepend_python_shebang.sh) For prepending Python-shebangs to .py files.
 
-- convert 'tab-delimited' to 'comma-separated' CSV files [[IPython nb](http://nbviewer.ipython.org/github/rasbt/python_reference/blob/master/useful_scripts/fix_tab_csv.ipynb)]
+- Convert 'tab-delimited' to 'comma-separated' CSV files [[IPython nb](http://nbviewer.ipython.org/github/rasbt/python_reference/blob/master/useful_scripts/fix_tab_csv.ipynb)]
 
 - A random string generator [function](./useful_scripts/random_string_generator.py)
 
@@ -156,50 +156,56 @@
 
 
 
-- [PyPI - the Python Package Index](https://pypi.python.org/pypi) - the official repository for all open source Python modules and packages  
+- [PyPI - the Python Package Index](https://pypi.python.org/pypi) - The official repository for all open source Python modules and packages.  
 
-- [PEP 8](http://legacy.python.org/dev/peps/pep-0008/) - The official style guide for Python code
+- [PEP 8](http://legacy.python.org/dev/peps/pep-0008/) - The official style guide for Python code.
 
 
+<br>
 
 **// News**
 
-- [Python subreddit](http://www.reddit.com/r/Python/) - my favorite resource to catch up with Python news and great Python-related articles
+- [Python subreddit](http://www.reddit.com/r/Python/) - My favorite resource to catch up with Python news and great Python-related articles.
 
-- [Python community on Google+](https://plus.google.com/communities/103393744324769547228) - a nice and friendly community to share and discuss everything about Python
+- [Python community on Google+](https://plus.google.com/communities/103393744324769547228) - A nice and friendly community to share and discuss everything about Python.
 
-- [Python Weekly](http://www.pythonweekly.com) - A free weekly newsletter featuring curated news, articles, new releases, jobs etc. related to Python
+- [Python Weekly](http://www.pythonweekly.com) - A free weekly newsletter featuring curated news, articles, new releases, jobs etc. related to Python.
 
 
+<br>
 
 **// Resources for learning Python**
 
-- [Learn Python The Hard Way](http://learnpythonthehardway.org/book/) - one of the most popular and recommended resources for learning Python  
+- [Learn Python The Hard Way](http://learnpythonthehardway.org/book/) - The popular and probably most recommended resource for learning Python.  
 
-- [Dive Into Python](http://www.diveintopython.net) / [Dive Into Python 3](http://getpython3.com/diveintopython3/) - a free Python book for experienced programmers
+- [Dive Into Python](http://www.diveintopython.net) / [Dive Into Python 3](http://getpython3.com/diveintopython3/) - A free Python book for experienced programmers.
 
-- [The Hitchhiker’s Guide to Python](http://docs.python-guide.org/en/latest/) - a free best-practice handbook for both novices and experts
+- [The Hitchhiker’s Guide to Python](http://docs.python-guide.org/en/latest/) - A free best-practice handbook for both novices and experts.
 
-- [Think Python - How to Think Like a Computer Scientist](http://www.greenteapress.com/thinkpython/) - an introduction for beginners starting with basic concepts of programming
+- [Think Python - How to Think Like a Computer Scientist](http://www.greenteapress.com/thinkpython/) - An introduction for beginners starting with basic concepts of programming.
+
+- [Python Patterns](http://matthiaseisen.com/pp/topics/t003/) -  A directory of proven, reusable solutions to common programming problems.
+
+<br>
 
 **// My favorite Python projects and packages**
 
-- [The IPython Notebook](http://ipython.org/notebook.html) - an interactive computational environment for combining code execution, documentation (with Markdown and LateX support), inline plots, and rich media all in one document.
+- [The IPython Notebook](http://ipython.org/notebook.html) - An interactive computational environment for combining code execution, documentation (with Markdown and LateX support), inline plots, and rich media all in one document.
 
-- [matplotlib](http://matplotlib.org) - Python's favorite plotting library
+- [matplotlib](http://matplotlib.org) - Python's favorite plotting library.
 
-- [NumPy](http://www.numpy.org) - a library for multi-dimensional arrays and matrices, along with a large library of high-level mathematical functions to operate on these arrays
+- [NumPy](http://www.numpy.org) - A library for multi-dimensional arrays and matrices, along with a large library of high-level mathematical functions to operate on these arrays.
 
-- [SciPy](http://www.scipy.org) - a library that provides various useful functions for numerical computing, such as modules for optimization, linear algebra, integration, interpolation, ...
+- [SciPy](http://www.scipy.org) - A library that provides various useful functions for numerical computing, such as modules for optimization, linear algebra, integration, interpolation, ...
 
 
-- [pandas](http://pandas.pydata.org) - high-performance, easy-to-use data structures and data analysis tools build on top of Numpy
+- [pandas](http://pandas.pydata.org) - High-performance, easy-to-use data structures and data analysis tools build on top of NumPy.
 
-- [Cython](http://cython.org) - C-extensions for Python, an optimizing static compiler to combine Python and C code
+- [Cython](http://cython.org) - C-extensions for Python, an optimizing static compiler to combine Python and C code.
 
-- [Numba](http://numba.pydata.org) - an just-in-time specializing compiler which compiles annotated Python and NumPy code to LLVM (through decorators)
+- [Numba](http://numba.pydata.org) - A just-in-time specializing compiler which compiles annotated Python and NumPy code to LLVM (through decorators)
 
-- [scikit-learn](http://scikit-learn.org/stable/) - a powerful machine learning library for Python and tools for efficient data mining and analysis
+- [scikit-learn](http://scikit-learn.org/stable/) - A powerful machine learning library for Python and tools for efficient data mining and analysis.
 
 
 
