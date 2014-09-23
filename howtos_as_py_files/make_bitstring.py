@@ -6,6 +6,9 @@ def make_bitstring(ary)
     return np.where(ary > 0, 1, 0)
 
 
+def faster_bitstring(ary)
+    return np.where(ary > 0).astype('i1')
+
 ### Example:
 
 ary1 = np.array([1, 2, 0.3, -1, -2])
