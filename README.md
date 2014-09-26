@@ -51,6 +51,8 @@
 
 - Quick guide for dealing with missing numbers in NumPy [[IPython nb](http://nbviewer.ipython.org/github/rasbt/python_reference/blob/master/tutorials/numpy_nan_quickguide.ipynb)]
 
+- A random collection of useful Python patterns [[IPython nb](http://nbviewer.ipython.org/github/rasbt/python_reference/blob/master/python_patterns/patterns.ipynb)]
+
 <br>
 
 
