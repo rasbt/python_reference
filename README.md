@@ -100,9 +100,15 @@
 ###// Benchmarks
 [[back to top](#a-collection-of-useful-scripts-tutorials-and-other-python-related-things)]
 
-*The benchmark category has been moved to a separate GitHub repository [One-Python-benchmark-per-day](https://github.com/rasbt/One-Python-benchmark-per-day)*
+
+- Simple tricks to speed up the sum calculation in pandas [[IPython nb](http://nbviewer.ipython.org/github/rasbt/python_reference/blob/master/benchmarks/pandas_sum_tricks.ipynb)]
+
+<br>
+*More benchmarks can be found in the separate GitHub repository [One-Python-benchmark-per-day](https://github.com/rasbt/One-Python-benchmark-per-day)*
 
 **Featured articles**:  
+
+
 
 - (C)Python compilers - Cython vs. Numba vs. Parakeet [[IPython nb](http://nbviewer.ipython.org/github/rasbt/One-Python-benchmark-per-day/blob/master/ipython_nbs/day4_2_cython_numba_parakeet.ipynb)]
 
