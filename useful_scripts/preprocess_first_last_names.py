@@ -62,9 +62,6 @@ def preprocess_names(name, output_sep=' ', firstname_output_letters=1):
     if len(spl) > 2:
         name = '%s %s' % (spl[0], spl[last_pos])    
 
-    spl1, *spl2 = name.split()
-    '%s %s' % (spl1, ''.join(spl2))
-        
     # remove accents
     name = ''.join(x for x in unicodedata.normalize('NFKD', name) if x in string.ascii_letters+' ')
     
