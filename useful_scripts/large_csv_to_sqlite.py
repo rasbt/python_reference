@@ -28,7 +28,7 @@ nlines = int(nlines.split()[0])
 cnx = sqlite3.connect(out_sqlite)
 
 # Iteratively read CSV and dump lines into the SQLite table
-for i in range(0, nlines, chunksize):
+for i in range(0, nlines, chunksize):  # change 0 -> 1 if your csv file contains a column header
     
     df = pd.read_csv(in_csv,  
             header=None,  # no header, define column header manually later
