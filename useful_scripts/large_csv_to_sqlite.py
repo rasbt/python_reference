@@ -21,7 +21,7 @@ chunksize = 100000 # number of lines to process at each iteration
 columns = ['molecule_id','charge','db','drugsnow','hba','hbd','loc','nrb','smiles']
 
 # Get number of lines in the CSV file
-nlines = subprocess.check_output('wc -l %s' % in_csv, shell=True)
+nlines = subprocess.check_output(['wc', '-l', in_csv])
 nlines = int(nlines.split()[0]) 
 
 # connect to database
