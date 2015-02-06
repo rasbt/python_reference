@@ -17,6 +17,9 @@ out_sqlite = '../data/my.sqlite'
 table_name = 'my_table' # name for the SQLite database table
 chunksize = 100000 # number of lines to process at each iteration
 
+# columns that should be read from the CSV file
+columns = ['molecule_id','charge','db','drugsnow','hba','hbd','loc','nrb','smiles']
+
 # Get number of lines in the CSV file
 nlines = subprocess.check_output('wc -l %s' % in_csv, shell=True)
 nlines = int(nlines.split()[0]) 
@@ -33,7 +36,7 @@ for i in range(0, nlines, chunksize):
             skiprows=i)   # skip rows that were already read
     
     # columns to read        
-    df.columns = ['molecule_id','charge','db','drugsnow','hba','hbd','loc','nrb','smiles']
+    df.columns = columns
 
     sql.to_sql(df, 
                 name=table_name, 
