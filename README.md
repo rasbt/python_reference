@@ -154,11 +154,11 @@
 
 - [Shell script](./useful_scripts/prepend_python_shebang.sh) For prepending Python-shebangs to .py files.
 
-- Convert 'tab-delimited' to 'comma-separated' CSV files [[IPython nb](http://nbviewer.ipython.org/github/rasbt/python_reference/blob/master/useful_scripts/fix_tab_csv.ipynb)]
+- A random string generator [function](./useful_scripts/random_string_generator.py).
 
-- A random string generator [function](./useful_scripts/random_string_generator.py)
+- [Converting large CSV files](https://github.com/rasbt/python_reference/blob/master/useful_scripts/large_csv_to_sqlite.py) to SQLite databases using pandas.
 
-
+- [Sparsifying a matrix](https://github.com/rasbt/python_reference/blob/master/useful_scripts/sparsify_matrix.py) by zeroing out all elements but the top k elements in a row using NumPy.
 
 <br>
 

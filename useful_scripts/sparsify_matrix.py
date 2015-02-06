@@ -4,6 +4,8 @@
 # The matrix could be a distance or similarity matrix (e.g., kernel matrix in kernel PCA),
 # where we are interested to keep the top k neighbors.
 
+import numpy as np
+
 print('Sparsify a matrix by zeroing all elements but the top 2 values in a row.\n')
 
 A = np.array([[1,2,3,4,5],[9,8,6,4,5],[3,1,7,8,9]])
