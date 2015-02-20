@@ -170,7 +170,9 @@
 
 - [PyPI - the Python Package Index](https://pypi.python.org/pypi) - The official repository for all open source Python modules and packages.  
 
-- [PEP 8](http://legacy.python.org/dev/peps/pep-0008/) - The official style guide for Python code.
+- [PEP 8](https://www.python.org/dev/peps/pep-0008/) - The official style guide for Python code.
+
+- [PEP 257](https://www.python.org/dev/peps/pep-0257/) - Python's official docstring conventions;  [pep257 - Python style guide checker](https://pypi.python.org/pypi/pep257)
 
 
 <br>
