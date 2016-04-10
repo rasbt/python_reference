@@ -36,7 +36,6 @@
 
 - Installing Scientific Packages for Python3 on MacOS 10.9 Mavericks [[Markdown](./tutorials/installing_scientific_packages.md)]
 
-
 - Sorting CSV files using the Python csv module [[IPython nb](http://nbviewer.ipython.org/github/rasbt/python_reference/blob/master/tutorials/sorting_csvs.ipynb)]
 
 - Using Cython with and without IPython magic [[IPython nb](http://nbviewer.ipython.org/github/rasbt/python_reference/blob/master/tutorials/running_cython.ipynb)]
@@ -65,7 +64,7 @@
 
 - Creating internal links in IPython Notebooks and Markdown docs [[IPython nb](http://nbviewer.ipython.org/github/rasbt/python_reference/blob/master/tutorials/table_of_contents_ipython.ipynb)]  
 
-- Converting Markdown to HTML and adding Python syntax highlighting [[Markdown](./tutorials/markdown_syntax_highlighting/README.md)] 
+- Converting Markdown to HTML and adding Python syntax highlighting [[Markdown](./tutorials/markdown_syntax_highlighting/README.md)]
 
 
 <br>
@@ -124,10 +123,10 @@
 
 - Vectorizing a classic for-loop in NumPy [[IPython nb](http://nbviewer.ipython.org/github/rasbt/One-Python-benchmark-per-day/blob/master/ipython_nbs/day16_numpy_vectorization.ipynb)]
 
-<br> 
+<br>
 
 
-###// Python and "Data Science" 
+###// Python and "Data Science"
 [[back to top](#a-collection-of-useful-scripts-tutorials-and-other-python-related-things)]
 
 *The "data science"-related posts have been moved to a separate GitHub repository [pattern_classification](https://github.com/rasbt/pattern_classification)*
@@ -162,6 +161,12 @@
 
 <br>
 
+###// Other
+
+- [Python book reviews](./other/python_book_reviews.md)
+- [Happy Mother's Day Plot](./other/happy_mothers_day.ipynb)
+
+<br>
 
 ###// Links
 [[back to top](#a-collection-of-useful-scripts-tutorials-and-other-python-related-things)]
@@ -220,5 +225,3 @@
 - [Numba](http://numba.pydata.org) - A just-in-time specializing compiler which compiles annotated Python and NumPy code to LLVM (through decorators)
 
 - [scikit-learn](http://scikit-learn.org/stable/) - A powerful machine learning library for Python and tools for efficient data mining and analysis.
-
-
