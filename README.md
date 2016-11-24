@@ -196,13 +196,15 @@
 
 - [Learn Python The Hard Way](http://learnpythonthehardway.org/book/) - The popular and probably most recommended resource for learning Python.  
 
+- [Snakify](https://snakify.org/) - An introductory tutorial with 100+ exercises and a step-by-step debugger to solve them.
+
 - [Dive Into Python](http://www.diveintopython.net) / [Dive Into Python 3](http://getpython3.com/diveintopython3/) - A free Python book for experienced programmers.
 
 - [The Hitchhiker’s Guide to Python](http://docs.python-guide.org/en/latest/) - A free best-practice handbook for both novices and experts.
 
 - [Think Python - How to Think Like a Computer Scientist](http://www.greenteapress.com/thinkpython/) - An introduction for beginners starting with basic concepts of programming.
 
-- [Python Patterns](http://matthiaseisen.com/pp/) -  A directory of proven, reusable solutions to common programming problems.
+- [Python Patterns](http://matthiaseisen.com/pp/) -  A directory of proven, reusable solutions to common programming problems.  
 
 <br>
 
