@@ -194,8 +194,6 @@
 
 **// Resources for learning Python**
 
-- [Learn Python The Hard Way](http://learnpythonthehardway.org/book/) - The popular and probably most recommended resource for learning Python.  
-
 - [Dive Into Python](http://www.diveintopython.net) / [Dive Into Python 3](http://getpython3.com/diveintopython3/) - A free Python book for experienced programmers.
 
 - [The Hitchhiker’s Guide to Python](http://docs.python-guide.org/en/latest/) - A free best-practice handbook for both novices and experts.
@@ -203,6 +201,8 @@
 - [Think Python - How to Think Like a Computer Scientist](http://www.greenteapress.com/thinkpython/) - An introduction for beginners starting with basic concepts of programming.
 
 - [Python Patterns](http://matthiaseisen.com/pp/) -  A directory of proven, reusable solutions to common programming problems.
+
+- [Intro to Computer Science - Build a Search Engine & a Social Network](https://www.udacity.com/course/intro-to-computer-science--cs101) - A great, free course for learning Python if you haven't programmed before.
 
 <br>
 
