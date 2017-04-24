@@ -1,4 +1,4 @@
-### A collection of useful scripts, tutorials, and other Python-related things
+<h3 id="top">A collection of useful scripts, tutorials, and other Python-related things</h3>
 
 <br>
 <img src="./Images/python-logo-master-v3-TM-flattened.png" alt="">
@@ -12,8 +12,8 @@
 - [// Plotting and Visualization](#-plotting-and-visualization)
 - [// Benchmarks](#-benchmarks)
 - [// Python and "Data Science"](#-python-and-data-science)
-- [// Other](#-other)
 - [// Useful scripts and snippets](#-useful-scripts-and-snippets)
+- [// Other](#-other)
 - [// Links](#-links)
 
 
@@ -21,8 +21,7 @@
 <div style="height:100px;"></div>
 
 
-###// Python tips and tutorials
-[[back to top](#a-collection-of-useful-scripts-tutorials-and-other-python-related-things)]
+<b id="-python-tips-and-tutorials">Python tips and tutorials</b> <a href="#top">[back to top]</a>
 
 - A collection of not so obvious Python stuff you should know! [[IPython nb](http://nbviewer.ipython.org/github/rasbt/python_reference/blob/master/tutorials/not_so_obvious_python_stuff.ipynb?create=1)]
 
@@ -59,8 +58,7 @@
 <br>
 
 
-###// Python and the web
-[[back to top](#a-collection-of-useful-scripts-tutorials-and-other-python-related-things)]
+<b id="-python-and-the-web">Python and the web</b> <a href="#top">[back to top]</a>
 
 - Creating internal links in IPython Notebooks and Markdown docs [[IPython nb](http://nbviewer.ipython.org/github/rasbt/python_reference/blob/master/tutorials/table_of_contents_ipython.ipynb)]  
 
@@ -68,8 +66,7 @@
 
 
 <br>
-###// Algorithms and Data Structures
-[[back to top](#a-collection-of-useful-scripts-tutorials-and-other-python-related-things)]
+<b id="-algorithms">Algorithms and Data Structures</b> <a href="#top">[back to top]</a>
 
 *This category has been moved to a separate GitHub repository [rasbt/algorithms_in_ipython_notebooks](https://github.com/rasbt/algorithms_in_ipython_notebooks)*
 
@@ -85,8 +82,7 @@
 - Singly Linked List [[ IPython nbviewer ](http://nbviewer.ipython.org/github/rasbt/algorithms_in_ipython_notebooks/blob/master/ipython_nbs/data-structures/singly-linked-list.ipynb)]
 
 <br>
-###// Plotting and Visualization
-[[back to top](#a-collection-of-useful-scripts-tutorials-and-other-python-related-things)]
+<b id="-plotting-and-visualization">Plotting and Visualization</b> <a href="#top">[back to top]</a>
 
 *The matplotlib-gallery in IPython notebooks has been moved to a separate GitHub repository [matplotlib-gallery](https://github.com/rasbt/matplotlib-gallery)*
 
@@ -99,8 +95,7 @@
 
 
 <br>
-###// Benchmarks
-[[back to top](#a-collection-of-useful-scripts-tutorials-and-other-python-related-things)]
+<b id="-benchmarks">Benchmarks</b> <a href="#top">[back to top]</a>
 
 
 - Simple tricks to speed up the sum calculation in pandas [[IPython nb](http://nbviewer.ipython.org/github/rasbt/python_reference/blob/master/benchmarks/pandas_sum_tricks.ipynb)]
@@ -125,8 +120,7 @@
 <br>
 
 
-###// Python and "Data Science"
-[[back to top](#a-collection-of-useful-scripts-tutorials-and-other-python-related-things)]
+<b id="-python-and-data-science">Python and "Data Science"</b> <a href="#top">[back to top]</a>
 
 *The "data science"-related posts have been moved to a separate GitHub repository [pattern_classification](https://github.com/rasbt/pattern_classification)*
 
@@ -145,8 +139,7 @@
 
 <br>
 
-###// Useful scripts and snippets
-[[back to top](#a-collection-of-useful-scripts-tutorials-and-other-python-related-things)]
+<b id="-useful-scripts-and-snippets">Useful scripts and snippets</b> <a href="#top">[back to top]</a>
 
 - [watermark](https://github.com/rasbt/watermark) - An IPython magic extension for printing date and time stamps, version numbers, and hardware information.
 
@@ -160,15 +153,14 @@
 
 <br>
 
-###// Other
+<b id="-other">Other</b> <a href="#top">[back to top]</a>
 
 - [Python book reviews](./other/python_book_reviews.md)
 - [Happy Mother's Day Plot](./other/happy_mothers_day.ipynb)
 
 <br>
 
-###// Links
-[[back to top](#a-collection-of-useful-scripts-tutorials-and-other-python-related-things)]
+<b id="-links">Links</b> <a href="#top">[back to top]</a>
 
 
 
