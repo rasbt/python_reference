@@ -192,6 +192,8 @@
 
 - [Think Python - How to Think Like a Computer Scientist](http://www.greenteapress.com/thinkpython/) - An introduction for beginners starting with basic concepts of programming.
 
+- [A Byte of Python](https://python.swaroopch.com/) - a free book on programming using the Python language.
+
 - [Python Patterns](http://matthiaseisen.com/pp/) -  A directory of proven, reusable solutions to common programming problems.
 
 - [Intro to Computer Science - Build a Search Engine & a Social Network](https://www.udacity.com/course/intro-to-computer-science--cs101) - A great, free course for learning Python if you haven't programmed before.
