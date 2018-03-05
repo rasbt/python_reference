@@ -188,6 +188,8 @@
 
 - [Dive Into Python](http://www.diveintopython.net) / [Dive Into Python 3](http://getpython3.com/diveintopython3/) - A free Python book for experienced programmers.
 
+- [Programming Community Curated Resources for Learning Python](https://hackr.io/tutorials/learn-python) - Tutorials & Courses submitted and voted by the programming community.
+
 - [The Hitchhiker’s Guide to Python](http://docs.python-guide.org/en/latest/) - A free best-practice handbook for both novices and experts.
 
 - [Think Python - How to Think Like a Computer Scientist](http://www.greenteapress.com/thinkpython/) - An introduction for beginners starting with basic concepts of programming.
