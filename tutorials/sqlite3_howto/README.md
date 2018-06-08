@@ -123,7 +123,7 @@ there is more information about PRIMARY KEYs further down in this section).
     conn.close()
     
 
-Download the script: [create_new_db.py](https://raw.github.com/rasbt/python_reference/master/tutorials/code/create_new_db.py)
+Download the script: [create_new_db.py](https://github.com/rasbt/python_reference/blob/master/tutorials/sqlite3_howto/code/create_new_db.py)
 
 * * *
 
@@ -207,7 +207,7 @@ Let's have a look at some code:
     conn.close()
     
 
-Download the script: [add_new_column.py](https://raw.github.com/rasbt/python_reference/master/tutorials/code/add_new_column.py)
+Download the script: [add_new_column.py](https://github.com/rasbt/python_reference/blob/master/tutorials/sqlite3_howto/code/add_new_column.py)
 
   
   
@@ -270,8 +270,7 @@ But let us first have a look at the example code:
     conn.close()
     
 
-Download the script: [update_or_insert_records.py](https://raw.github.com/rasb
-t/python_sqlite_code/master/code/update_or_insert_records.py)  
+Download the script: [update_or_insert_records.py](code/update_or_insert_records.py)  
   
 ![3_sqlite3_insert_update.png](../../Images/3_sqlite3_insert_update.png)  
   
@@ -335,8 +334,7 @@ drop the index, which is also shown in the code below.
     conn.close()
     
 
-Download the script: [create_unique_index.py](https://raw.github.com/rasbt/pyt
-hon_sqlite_code/master/code/create_unique_index.py)  
+Download the script: [create_unique_index.py](code/create_unique_index.py)  
   
 ![4_sqlite3_unique_index.png](../../Images/4_sqlite3_unique_index.png)  
   
@@ -401,8 +399,7 @@ row entries for all or some columns if they match certain criteria.
     conn.close()
     
 
-Download the script: [selecting_entries.py](https://raw.github.com/rasbt/pytho
-n_sqlite_code/master/code/selecting_entries.py)  
+Download the script: [selecting_entries.py](code/selecting_entries.py)  
   
 
 ![4_sqlite3_unique_index.png](../../Images/4_sqlite3_unique_index.png)  
@@ -542,8 +539,7 @@ that have been added xxx days ago.
     conn.close()
     
 
-Download the script: [date_time_ops.py](https://raw.github.com/rasbt/python_sq
-lite_code/master/code/date_time_ops.py)
+Download the script: [date_time_ops.py](code/date_time_ops.py)
 
   
   
@@ -645,8 +641,7 @@ column names):
     conn.close()
     
 
-Download the script: [get_columnnames.py](https://raw.github.com/rasbt/python_
-sqlite_code/master/code/get_columnnames.py)  
+Download the script: [get_columnnames.py](code/get_columnnames.py)  
   
 ![7_sqlite3_get_colnames_1.png](../../Images/7_sqlite3_get_colnames_1.png)  
   
