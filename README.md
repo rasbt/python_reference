@@ -197,6 +197,7 @@
 - [Python Patterns](http://matthiaseisen.com/pp/) -  A directory of proven, reusable solutions to common programming problems.
 
 - [Intro to Computer Science - Build a Search Engine & a Social Network](https://www.udacity.com/course/intro-to-computer-science--cs101) - A great, free course for learning Python if you haven't programmed before.
+- [Classic Computer Science Problems in Python](https://www.manning.com/books/classic-computer-science-problems-in-python) - this book presents dozens of coding challenges, ranging from simple tasks like finding items in a list with a binary search algorithm to clustering data using k-means.
 
 <br>
 
