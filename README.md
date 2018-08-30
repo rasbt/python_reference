@@ -52,7 +52,7 @@
 - A random collection of useful Python snippets [[IPython nb](http://nbviewer.ipython.org/github/rasbt/python_reference/blob/master/python_patterns/patterns.ipynb)]
 
 - Things in pandas I wish I'd had known earlier [[IPython nb](http://nbviewer.ipython.org/github/rasbt/python_reference/blob/master/tutorials/things_in_pandas.ipynb)]
-
+- Get Programming with Python in Motion  (https://www.manning.com/livevideo/get-programming-with-python-in-motion)]
 
 
 <br>
