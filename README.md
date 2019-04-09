@@ -71,7 +71,7 @@
 *This category has been moved to a separate GitHub repository [rasbt/algorithms_in_ipython_notebooks](https://github.com/rasbt/algorithms_in_ipython_notebooks)*
 
 
-- Sorting Algorithms [[IPython nb](http://nbviewer.ipython.org/github/rasbt/algorithms_in_ipython_notebooks/blob/master/ipython_nbs/sorting/sorting_algorithms.ipynb?create=1)]
+- Sorting Algorithms [[Collection of IPython Notebooks](https://github.com/rasbt/algorithms_in_ipython_notebooks/tree/master/ipython_nbs/sorting)
 
 - Linear regression via the least squares fit method [[IPython nb](http://nbviewer.ipython.org/github/rasbt/algorithms_in_ipython_notebooks/blob/master/ipython_nbs/statistics/linregr_least_squares_fit.ipynb?create=1)]
 
