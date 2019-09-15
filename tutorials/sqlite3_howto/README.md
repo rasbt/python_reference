@@ -319,7 +319,7 @@ drop the index, which is also shown in the code below.
     c.execute("ALTER TABLE {tn} ADD COLUMN '{cn}' {ct}"\
             .format(tn=table_name, cn=new_column, ct=column_type))
     c.execute("UPDATE {tn} SET {cn}='sebastian_r' WHERE {idf}=123456".\
-            format(tn=table_name, idf=id_column, cn=new_column))
+            .format(tn=table_name, idf=id_column, cn=new_column))
     
     # Creating an unique index
     c.execute('CREATE INDEX {ix} on {tn}({cn})'\
