@@ -13,7 +13,7 @@ def conc_gzip_files(in_dir, out_file, append=False, print_progress=True):
     Keyword arguments:
         in_dir (str): Path of the directory with the gzip-files
         out_file (str): Path to the resulting file
-        append (bool): If true, it appends contents to an exisiting file,
+        append (bool): If true, it appends contents to an existing file,
              else creates a new output file.
         print_progress (bool): prints progress bar if true.
 
