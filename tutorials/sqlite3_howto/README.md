@@ -586,7 +586,7 @@ syntax applies to simple dates or simple times only, too.
 #### Update Mar 16, 2014:
 
   
-If'd we are interested to calulate the hours between two `DATETIME()`
+If'd we are interested to calculate the hours between two `DATETIME()`
 timestamps, we can could use the handy `STRFTIME()` function like this  
   
 

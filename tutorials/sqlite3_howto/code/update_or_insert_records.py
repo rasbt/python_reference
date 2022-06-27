@@ -1,6 +1,6 @@
 # Sebastian Raschka, 2014
 # Update records or insert them if they don't exist.
-# Note that this is a workaround to accomodate for missing
+# Note that this is a workaround to accommodate for missing
 # SQL features in SQLite.
 
 import sqlite3

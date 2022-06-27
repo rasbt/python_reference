@@ -278,7 +278,7 @@ print its path:
     
 
 Finally, we can set an `alias` in our `.bash_profile` or `.bash_rc` file to
-conviniently run IPython from the console. E.g.,
+conveniently run IPython from the console. E.g.,
 
     
     
